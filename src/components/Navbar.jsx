@@ -7,16 +7,18 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
         // ------------------------------------- navbar -------------------------------------
-        <div className='relative z-10 h-[100px] bg-transparent flex justify-between items-center px-6' >
+        <div className='relative z-10 h-[100px] bg-transparent flex justify-between items-center px-6 pt-[55px]' >
 
             {/* -------- Logo ------  */}
             <NavLink to='/'>
-                <div> <img src={assets.logo} className='w-[180px] h-[55px] cursor-pointer' /> </div>
+                <div>
+                    <img src={assets.logo} className='w-25  md:w-[180px] md:h-[55px] cursor-pointer' />
+                </div>
             </NavLink>
 
             {/* -------- Options ------  */}
             <div>
-                <ul className='hidden xl:flex justify-around gap-8 font-semibold'>
+                <ul className='hidden xl:flex justify-around gap-8 font-semibold text-white'>
                     <NavLink to='/'><li>HOME</li> </NavLink>
                     <li>ABOUT US</li>
                     <li>SERVICES</li>
@@ -27,10 +29,13 @@ const Navbar = () => {
             </div>
 
             {/* -------- menu ------  */}
-            <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} xl:invisible visible text-5xl cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+            <div className='block xl:hidden '>
+                <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} text-5xl text-white cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+            </div>
+
 
             {/* ------ menu options --------  */}
-            <div className={`absolute top-28 left-0 sm:hidden  w-full flex flex-col items-center gap-6 transform transition-transform 
+            <div className={`absolute top-23 left-0 sm:hidden  w-full flex flex-col items-center gap-6 transform transition-transform 
                 ${isMenuOpen ? "opacity-100" : "opacity-0"} bg-white text-black`}
                 style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}>
 

@@ -1,5 +1,6 @@
 import logo from '../assets/images/logo.png'
 import headerCircle from '../assets/images/header-circle.png'
+import vector from '../assets/images/Vector.png'
 import background from '../assets/images/background.png'
 // ------------------------ carousal images ------------------------ 
 import carousal1 from '../assets/images/carousal1.jpg'
@@ -71,5 +72,5 @@ export const testimonialArray = [
 ]
 export const assets = {
     logo, headerCircle, background, aboutUsImg, cardBottomDesign, testimonialUserIcon,
-    footerBgImage, banner1, banner2
+    footerBgImage, banner1, banner2, vector
 }
