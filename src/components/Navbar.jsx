@@ -7,12 +7,12 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
         // ------------------------------------- navbar -------------------------------------
-        <div className='relative z-10 h-[100px] bg-transparent flex justify-between items-center px-6 pt-[55px]' >
+        <div className='relative z-10 h-[100px] bg-transparent flex justify-between items-center px-6 pt-[10px] lg:pt-[55px]' >
 
             {/* -------- Logo ------  */}
             <NavLink to='/'>
                 <div>
-                    <img src={assets.logo} className='w-25  md:w-[180px] md:h-[55px] cursor-pointer' />
+                    <img src={assets.logo} className='w-25 md:w-[180px] md:h-[55px] cursor-pointer' />
                 </div>
             </NavLink>
 
@@ -47,7 +47,6 @@ const Navbar = () => {
                 <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>PRODUCTS</li>
                 <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>PORTFOLIO</li>
                 <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>CONTACT US</li>
-
             </div>
 
         </div>
