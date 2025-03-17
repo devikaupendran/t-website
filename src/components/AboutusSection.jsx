@@ -16,10 +16,10 @@ const AboutusSection = () => {
                 <div className='w-[100%] xl:w-[50%]'>
 
                     <div className='w-max'>
-                        <h1 className='text-[32px] md:text-[37px] lg:text-[64px] xl:text-[70px]'>Designing <br /> Futuristic Solutions</h1>
+                        <h1 className='text-[32px] md:text-[70px] lg:text-[64px] xl:text-[70px]'>Designing <br /> Futuristic Solutions</h1>
                     </div>
 
-                    <div className='flex gap-4 mt-[10px]'>
+                    <div className='flex gap-4 mt-[18px]'>
                         {
                             about.map((i, index) => (
                                 <img key={index} src={i} className='w-[60px] h-[60px] sm:w-[88px] sm:h-[88px] hover:scale-130 transition-all ease-in duration-300 cursor-pointer' />
