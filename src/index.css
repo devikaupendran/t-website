@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 /* ------------- animation for the circle -----------  */
 
 @keyframes circleSlideInFromRight {
