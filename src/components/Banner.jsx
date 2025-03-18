@@ -4,9 +4,10 @@ import { assets } from '../assets/assets'
 
 const Banner = () => {
     return (
-   
-        <div className='flex item-center justify-center w-[100%]  h-80 sm:h-195'
-            style={{ backgroundImage: `url(${assets.productBanner})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+
+
+        <div className='flex item-center justify-center  w-[100%]  h-80 sm:h-195'
+            style={{ backgroundImage: `url(${assets.productBanner})`, backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         </div>
     )
 }

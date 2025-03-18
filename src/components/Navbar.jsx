@@ -44,14 +44,22 @@ const Navbar = () => {
 
             {/* -------- menu ------  */}
             <div className='block xl:hidden '>
-                <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} text-5xl ${menuColor} cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+                <i className={`bx bx-menu text-5xl ${isMenuOpen && 'text-[#ff4a17]'} ${menuColor} cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
             </div>
 
 
             {/* ------ menu options --------  */}
-            <div className={`absolute top-23 left-0  w-full flex flex-col items-center gap-6 transform transition-transform 
-                ${isMenuOpen ? "block" : "hidden"} bg-white text-black`}
-                style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}>
+            <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6 custom-menubar
+                ${isMenuOpen ? "block" : "hidden"} bg-orange-50 text-black`}
+                style={{
+
+                    transition: "transform 0.3s ease, opacity 0.3s ease",
+                    animation: isMenuOpen ? 'animatetop 1s' : 'none',
+                }}>
+
+                <div className='w-full relative'>
+                    <img src={assets.close} alt="" className='text-black hover:text-[#ff4a17] cursor-pointer absolute right-0 pe-10 pt-5 text-5xl' onClick={closeMenu} />
+                </div>
 
                 <NavLink to={'/'} onClick={closeMenu}
                     className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
@@ -79,7 +87,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink to={'/contact-us'} onClick={closeMenu}
-                    className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                    className='list-none w-full text-center p-4 pb-10 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
                     <li>CONTACT US</li>
                 </NavLink>
             </div>

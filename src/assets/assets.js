@@ -1,6 +1,7 @@
 import logo from '../assets/images/logo.svg'
 import headerCircle from '../assets/images/header-circle.png'
 import background from '../assets/images/background.png'
+import close from '../assets/images/close.svg'
 
 // ------------------------ carousal and products images ------------------------ 
 import carousal1 from '../assets/images/carousal1.jpg'
@@ -85,7 +86,7 @@ export const testimonialArray = [
 export const portfolioArray = [
     {
         image: adhischool,
-        icon:'bx-window-alt',
+        icon: 'bx-window-alt',
         heading: "product name ",
         category: "website"
     },
@@ -99,12 +100,12 @@ export const portfolioArray = [
 
     {
         image: spotisan,
-        icon:'bx-window-alt',
+        icon: 'bx-window-alt',
         heading: "product name ",
         category: "website"
     },
 ]
 export const assets = {
     logo, headerCircle, background, aboutUsImg, cardBottomDesign, testimonialUserIcon,
-    footerBgImage, productBanner, monitor
+    footerBgImage, productBanner, monitor, close
 }
