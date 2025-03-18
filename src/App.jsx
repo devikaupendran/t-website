@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Products from './pages/Products';
 import Services from './pages/Services';
 import Portfolio from './components/Portfolio';
-import Aboutus from './components/Aboutus';
+import About from './components/Aboutus';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +35,7 @@ const App = () => {
                             <Route path='/products' element={<Products />} />
                             <Route path='/services' element={<Services />} />
                             <Route path='/portfolio' element={<Portfolio />} />
-                            <Route path='/about-us' element={<Aboutus />} />
+                            <Route path='/about-us' element={<About />} />
                         </Routes>
                         {/* <Footer />  */}
                     </>
