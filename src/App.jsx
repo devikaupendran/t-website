@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Contactus from './pages/Contactus';
 import Spinner from './components/Spinner/Spinner';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Contactus from './pages/Contactus';
 import Products from './pages/Products';
 import Services from './pages/Services';
-import Portfolio from './components/Portfolio';
-import About from './components/About';
+import Portfolio from './pages/Portfolio';
+import About from './pages/About';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
