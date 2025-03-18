@@ -36,5 +36,19 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* ------------------ testimonial message quote mark -----------  */
 
+.description p::before {
+    content: open-quote;
+}
 
+.description p::after {
+    content: close-quote;
+}
+
+.description p::before,
+.description p::after {
+    display: inline;
+    color: orange;
+    font-weight: bold;
+}

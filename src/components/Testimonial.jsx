@@ -35,7 +35,7 @@ const Testimonials = () => {
             </div>
 
             {/* -------------------- carousel -------------------- */}
-            <div className='w-full h-[470px] sm:h-[650px]  flex justify-center items-center relative '>
+            <div className='w-full h-[500px] sm:h-[650px]  flex justify-center items-center relative '>
                 <div className='message overflow-hidden w-[95%] sm:w-[68%] h-[100%]  bg-white  relative shadow-2xl'>
                     <div className={`flex transition ease-in-out duration-700 w-full h-[83%]`} style={{ transform: `translateX(-${current * 100}%)` }}>
                         {
@@ -46,21 +46,21 @@ const Testimonials = () => {
                                         {/* ----------- 1st Section ----------- */}
                                         <section className='flex gap-4 items-center  '>
                                             <div>
-                                                <img src={assets.testimonialUserIcon} className=' w-20 h-20 sm:w-[120px] sm:h-[120px] rounded-full' alt="User" />
+                                                <img src={assets.testimonialUserIcon} className=' w-15 h-15 md:w-[120px] md:h-[120px] rounded-full' alt="User" />
                                             </div>
 
                                             <div className='flex flex-col gap-2 justify-center'>
-                                                <h1 className='text-[#ED7F13] text-[26px] sm:text-[36px] font-semibold'>{item.name}</h1>
-                                                <div className='flex justify-center gap-2'>
+                                                <h1 className='text-[#ED7F13] text-[23px] md:text-[36px] font-semibold'>{item.name}</h1>
+                                                <div className='flex justify-center items-center gap-2'>
                                                     <i className='bx bxs-building text-[26px] text-[#797979]'></i>
-                                                    <span className='sm:text-[20px] text-[#797979]'>{item.company}</span>
+                                                    <span className='text-[14px] md:text-[20px] text-[#797979]'>{item.company}</span>
                                                 </div>
                                             </div>
                                         </section>
 
                                         {/* ----------- 2nd Section ----------- */}
-                                        <section className='md:px-6 mt-5'>
-                                            <p className='italic text-[13px] md:text-[16px] lg:text-[20px] font-light text-center'>{item.comment}</p>
+                                        <section className='mt-3 md:px-6 md:mt-5 description'>
+                                            <p className='italic text-[12px] md:text-[16px] lg:text-[20px] font-light text-justify'>{item.comment}</p>
                                         </section>
                                     </div>
                                 )
@@ -73,7 +73,7 @@ const Testimonials = () => {
                         <div className='flex items-center justify-center gap-2'>
                             {
                                 testimonialArray.map((_, i) => (
-                                    <div key={i} className={`transition-all w-3 h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}></div>
+                                    <div key={i} className={`transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}></div>
                                 ))
                             }
                         </div>
