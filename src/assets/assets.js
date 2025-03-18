@@ -1,4 +1,4 @@
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.svg'
 import headerCircle from '../assets/images/header-circle.png'
 import background from '../assets/images/background.png'
 
