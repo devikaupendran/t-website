@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 
 const AboutusSection = () => {
     return (
-        <div className='w-full h-max bg-[#f2f2f2] px-10 lg:px-[80px] xl:px-[6%]'>
+        <div className='w-full h-max bg-[#f2f2f2] px-10 lg:px-[80px] xl:px-[6%] pb-30'>
 
             <div className='w-max pt-[63px]'>
                 <h2 className='text-[#ED7F13] bg-[#ebebeb] shadow-sm p-3 px-6 rounded-lg text-[20px] md:text-[36px]'>ABOUT TRICTA</h2>
