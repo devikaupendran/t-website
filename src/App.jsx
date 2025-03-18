@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Products from './pages/Products';
 import Services from './pages/Services';
 import Portfolio from './components/Portfolio';
-import About from './components/Aboutus';
+import About from './components/About';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
