@@ -1,13 +1,20 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation(); // Get the current path
+
+    // text color based on the current path
+    const textColor = location.pathname === '/' ? 'text-white' : 'text-black';
+    const padding = location.pathname === '/' ? 'pt-[10px] lg:pt-[55px]' : 'pt-0';
+    const boxShadow = location.pathname === '/' ? 'shadow-none' : 'shadow-xl';
+
     return (
         // ------------------------------------- navbar -------------------------------------
-        <div className='relative z-10 h-[100px] bg-transparent flex justify-between items-center px-6 pt-[10px] lg:pt-[55px]' >
+        <div className={`relative z-10 h-[113px] bg-transparent flex justify-between items-center ${boxShadow} px-6 ${padding}`} >
 
             {/* -------- Logo ------  */}
             <NavLink to='/'>
@@ -18,11 +25,11 @@ const Navbar = () => {
 
             {/* -------- Options ------  */}
             <div>
-                <ul className='hidden xl:flex justify-around gap-8 font-semibold text-white'>
+                <ul className={`hidden xl:flex justify-around gap-8 font-semibold ${textColor}`}>
                     <NavLink to='/'><li>HOME</li> </NavLink>
                     <li>ABOUT US</li>
                     <li>SERVICES</li>
-                    <li>PRODUCTS</li>
+                    <NavLink to='/products'><li>PRODUCTS</li></NavLink>
                     <li>PORTFOLIO</li>
                     <li>CONTACT US</li>
                 </ul>
@@ -30,7 +37,7 @@ const Navbar = () => {
 
             {/* -------- menu ------  */}
             <div className='block xl:hidden '>
-                <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} text-5xl text-white cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+                <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} text-5xl ${textColor} cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
             </div>
 
 

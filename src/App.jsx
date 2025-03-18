@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Contactus from './pages/Contactus';
 import Spinner from './components/Spinner/Spinner';
 import Footer from './components/Footer';
+import Products from './pages/Products';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -28,8 +29,9 @@ const App = () => {
                         <Routes>
                             <Route path='/' element={<Home />} />
                             <Route path='/contactus' element={<Contactus />} />
+                            <Route path='/products' element={<Products />} />
                         </Routes>
-                        <Footer />
+                        {/* <Footer />  */}
                     </>
                 )
             }

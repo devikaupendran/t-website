@@ -17,7 +17,7 @@ const Portfolio = () => {
             {/* ----------- portfolio container ------------  */}
             <div className='w-full h-max flex justify-center mt-[30px]'>
 
-                <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-50 '>
+                <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-40 '>
                     {
                         portfolioArray.map((portfolio, index) => {
                             return (

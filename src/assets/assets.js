@@ -26,6 +26,10 @@ import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
 //---------------------- footer background image ----------------
 import footerBgImage from '../assets/images/footer-bg.jpg'
 
+//---------------------- product  image ----------------
+import productBanner from '../assets/images/banner.jpg'
+import monitor from '../assets/images/monitor.svg'
+
 //---------------------- portfolio images ----------------
 import adhischool from '../assets/images/adhischool.jpg'
 import newYou from '../assets/images/newYou.jpg'
@@ -102,5 +106,5 @@ export const portfolioArray = [
 ]
 export const assets = {
     logo, headerCircle, background, aboutUsImg, cardBottomDesign, testimonialUserIcon,
-    footerBgImage, adhischool
+    footerBgImage, productBanner, monitor
 }
