@@ -17,7 +17,7 @@ const Portfolio = () => {
             {/* ----------- portfolio container ------------  */}
             <div className='w-full h-max flex justify-center mt-[30px]'>
 
-                <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-40'>
+                <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-40 '>
                     {
                         portfolioArray.map((portfolio, index) => {
                             return (
@@ -27,7 +27,7 @@ const Portfolio = () => {
                                     {/* --------------- portfolio image --------------- */}
 
                                     <div className='w-[450px] h-[320px] rounded-2xl overflow-hidden'>
-                                        <img src={portfolio.image} className='w-full h-full group-hover:scale-120 transition-all ease-in-out duration-800 ' />
+                                        <img src={portfolio.image} className='w-full h-full group-hover:scale-120 transition-all ease-in-out duration-800 object-contain' />
                                     </div>
 
                                     {/* --------------- Sub-box container  --------------- */}
