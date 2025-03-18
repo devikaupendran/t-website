@@ -1,7 +1,7 @@
 import React from 'react'
 import { portfolioArray } from '../assets/assets'
 
-const Portfolio = () => {
+const PortfolioSection = () => {
     return (
         <div className='w-full h-max mb-60 px-10 '>
 
@@ -27,7 +27,7 @@ const Portfolio = () => {
                                     {/* --------------- portfolio image --------------- */}
 
                                     <div className='w-[320px] h-[300px] md:w-[450px] md:h-[320px] rounded-2xl overflow-hidden'>
-                                        <img src={portfolio.image} className='w-full h-full group-hover:scale-120 transition-all ease-in-out duration-800 object-contain' />
+                                        <img src={portfolio.image} className='w-full h-full group-hover:scale-120 transition-all ease-in-out duration-800 object-cover' />
                                     </div>
 
                                     {/* --------------- Sub-box container  --------------- */}
@@ -75,4 +75,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default PortfolioSection
