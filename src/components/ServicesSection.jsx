@@ -17,7 +17,7 @@ const ServicesSection = () => {
                 <ServicesCard />
 
                 <div className='flex justify-center m-20'>
-                    <button className='p-1 px-4 md:p-3 md:px-6 md:text-[29px] cursor-pointer text-[#ED7F13] border border-[#ED7F13] hover:bg-[#ED7F13] hover:text-white  transition-all duration-600 ease-in-out rounded-[10px]'>
+                    <button className='p-1 px-4 text-[24px] md:p-3 md:px-6 md:text-[29px] cursor-pointer text-[#ED7F13] border border-[#ED7F13] hover:bg-[#ED7F13] hover:text-white  transition-all duration-600 ease-in-out rounded-[10px]'>
                         View more
                     </button>
                 </div>

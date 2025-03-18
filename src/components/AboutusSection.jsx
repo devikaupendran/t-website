@@ -46,7 +46,7 @@ const AboutusSection = () => {
                 </div>
 
                 {/* --------------- right section --------------- */}
-                <div className='w-[100%] xl:w-[50%]'>
+                <div className='w-[100%] xl:w-[50%] pb-3'>
 
                     <div className='bg-[#ECECEC] border-[4px] border-white rounded-[20px] w-full  flex flex-col items-center justify-between'>
 
