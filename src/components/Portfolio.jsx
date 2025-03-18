@@ -17,7 +17,7 @@ const Portfolio = () => {
             {/* ----------- portfolio container ------------  */}
             <div className='w-full h-max flex justify-center mt-[30px]'>
 
-                <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-40 '>
+                <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-50 '>
                     {
                         portfolioArray.map((portfolio, index) => {
                             return (
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
                                     {/* --------------- portfolio image --------------- */}
 
-                                    <div className='w-[450px] h-[320px] rounded-2xl overflow-hidden'>
+                                    <div className='w-[320px] h-[300px] md:w-[450px] md:h-[320px] rounded-2xl overflow-hidden'>
                                         <img src={portfolio.image} className='w-full h-full group-hover:scale-120 transition-all ease-in-out duration-800 object-contain' />
                                     </div>
 
@@ -38,7 +38,7 @@ const Portfolio = () => {
                                         <div className='w-full relative'>
 
                                             {/* --------------- ICON --------------- */}
-                                            <div className='w-25 h-25 border-6 border-white bg-[#ff4a17] flex items-center justify-center rounded-full absolute top-0
+                                            <div className='w-20 h-20 md:w-25 md:h-25 border-6 border-white bg-[#ff4a17] flex items-center justify-center rounded-full absolute top-0
                                                 group-hover:border-1 group-hover:border-[#ff4a17] group-hover:bg-white transition-all ease-in duration-400'
                                                 style={
                                                     {
@@ -49,14 +49,14 @@ const Portfolio = () => {
 
                                                 }>
 
-                                                <i className={`bx ${portfolio.icon} text-white text-6xl p-3 group-hover:text-[#ff4a17]`}></i>
+                                                <i className={`bx ${portfolio.icon} text-white text-4xl md:text-6xl p-3 group-hover:text-[#ff4a17]`}></i>
 
                                             </div>
 
                                             {/* --------------- HEADINGS --------------- */}
-                                            <div className='flex flex-col gap-3 mt-14'>
-                                                <p className='group-hover:text-[#ff4a17] text-4xl font-semibold text-center'>{portfolio.heading}</p>
-                                                <p className='category text-2xl text-center'>{portfolio.category}</p>
+                                            <div className='flex flex-col gap-3 mt-10 md:mt-14'>
+                                                <p className='group-hover:text-[#ff4a17] text-2xl md:text-3xl font-semibold text-center'>{portfolio.heading}</p>
+                                                <p className='category  md:text-2xl text-center'>{portfolio.category}</p>
                                             </div>
                                         </div>
 
