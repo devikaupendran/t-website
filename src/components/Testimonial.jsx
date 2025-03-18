@@ -35,8 +35,8 @@ const Testimonials = () => {
             </div>
 
             {/* -------------------- carousel -------------------- */}
-            <div className='w-full h-[500px] sm:h-[650px]  flex justify-center items-center relative '>
-                <div className='message overflow-hidden w-[95%] sm:w-[68%] h-[100%]  bg-white  relative shadow-2xl'>
+            <div className='w-full h-[500px] md:h-[650px]  flex justify-center items-center relative '>
+                <div className='message overflow-hidden w-[95%] md:w-[68%] h-[100%]  bg-white  relative shadow-3xl'>
                     <div className={`flex transition ease-in-out duration-700 w-full h-[83%]`} style={{ transform: `translateX(-${current * 100}%)` }}>
                         {
                             testimonialArray.map((item, index) => {

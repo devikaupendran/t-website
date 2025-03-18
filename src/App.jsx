@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Contactus from './pages/Contactus';
 import Spinner from './components/Spinner/Spinner';
+import Footer from './components/Footer';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ const App = () => {
                             <Route path='/' element={<Home />} />
                             <Route path='/contactus' element={<Contactus />} />
                         </Routes>
+                        <Footer />
                     </>
                 )
             }
