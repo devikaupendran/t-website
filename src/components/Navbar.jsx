@@ -9,6 +9,7 @@ const Navbar = () => {
 
     // text color based on the current path
     const textColor = location.pathname === '/' ? 'text-white' : 'text-black';
+    const menuColor = location.pathname === '/' ? 'text-white' : 'text-[#ff4a17]';
     const padding = location.pathname === '/' ? 'pt-[10px] lg:pt-[55px]' : 'pt-0';
     const boxShadow = location.pathname === '/' ? 'shadow-none' : 'shadow-xl';
 
@@ -43,7 +44,7 @@ const Navbar = () => {
 
             {/* -------- menu ------  */}
             <div className='block xl:hidden '>
-                <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} text-5xl ${textColor} cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
+                <i className={`bx ${isMenuOpen ? 'bx-window-close' : 'bx-menu'} text-5xl ${menuColor} cursor-pointer `} onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
             </div>
 
 
