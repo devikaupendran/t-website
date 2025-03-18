@@ -3,7 +3,7 @@ import { portfolioArray } from '../assets/assets'
 
 const Portfolio = () => {
     return (
-        <div className='w-full h-max mb-60'>
+        <div className='w-full h-max mb-60 px-10 '>
 
             <div className='w-max pt-[63px] px-10  lg:px-[80px] xl:px-[6%]'>
                 <h2 className='text-[#ED7F13] bg-[#ebebeb] shadow-sm p-3 px-6 rounded-lg text-[20px] md:text-[36px]'>PORTFOLIO</h2>
