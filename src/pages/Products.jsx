@@ -10,9 +10,6 @@ const Products = () => {
                 <Banner />
             </div>
 
-
-
-
             <div>
                 <h1 className='text-center text-[70px] md:text-[90px] mt-10'>Our Products</h1>
 

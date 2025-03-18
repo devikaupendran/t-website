@@ -26,12 +26,13 @@ const Navbar = () => {
             {/* -------- Options ------  */}
             <div>
                 <ul className={`hidden xl:flex justify-around gap-8 font-semibold ${textColor}`}>
-                    <NavLink to='/'><li>HOME</li> </NavLink>
-                    <li>ABOUT US</li>
-                    <li>SERVICES</li>
-                    <NavLink to='/products'><li>PRODUCTS</li></NavLink>
-                    <li>PORTFOLIO</li>
-                    <li>CONTACT US</li>
+                    
+                    <NavLink to={'/'}><li>HOME</li> </NavLink>
+                    <NavLink to={'/about-us'}><li>ABOUT US</li></NavLink>
+                    <NavLink to={'/services'}> <li>SERVICES</li></NavLink>
+                    <NavLink to={'/products'}><li>PRODUCTS</li></NavLink>
+                    <NavLink to={'/portfolio'}> <li>PORTFOLIO</li></NavLink>
+                    <NavLink to={'/contact-us'}> <li>CONTACT US</li></NavLink>
                 </ul>
             </div>
 
@@ -46,14 +47,29 @@ const Navbar = () => {
                 ${isMenuOpen ? "opacity-100" : "opacity-0"} bg-white text-black`}
                 style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}>
 
-                <NavLink to='/' className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                <NavLink to={'/'} className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
                     <li>HOME</li>
                 </NavLink>
-                <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>ABOUT US</li>
-                <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>SERVICES</li>
-                <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>PRODUCTS</li>
-                <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>PORTFOLIO</li>
-                <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>CONTACT US</li>
+
+                <NavLink to={'/about-us'}>
+                    <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>ABOUT US</li>
+                </NavLink>
+
+                <NavLink to={'/services'}>
+                    <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>SERVICES</li>
+                </NavLink>
+
+                <NavLink to={'/products'}>
+                    <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>PRODUCTS</li>
+                </NavLink>
+
+                <NavLink to={'/portfolio'}>
+                    <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>PORTFOLIO</li>
+                </NavLink>
+
+                <NavLink to={'/contact-us'}>
+                    <li className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>CONTACT US</li>
+                </NavLink>
             </div>
 
         </div>
