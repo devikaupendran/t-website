@@ -1,17 +1,19 @@
 import logo from '../assets/images/logo.png'
 import headerCircle from '../assets/images/header-circle.png'
-import vector from '../assets/images/Vector.png'
 import background from '../assets/images/background.png'
-// ------------------------ carousal images ------------------------ 
+
+// ------------------------ carousal and products images ------------------------ 
 import carousal1 from '../assets/images/carousal1.jpg'
 import carousal2 from '../assets/images/carousal2.jpg'
 import carousal3 from '../assets/images/carousal3.jpg'
 import carousal4 from '../assets/images/carousal4.jpg'
+
 // ------------------------- About us images -------------------------
 import aboutIcon1 from '../assets/images/about-icon1.png'
 import aboutIcon2 from '../assets/images/about-icon2.png'
 import aboutIcon3 from '../assets/images/about-icon3.png'
 import aboutUsImg from '../assets/images/about-us-img.png'
+
 // ---------------------- Services images ----------------
 import mobileDevelopment from '../assets/images/service-mobileDevelopment.gif'
 import webDevelopment from '../assets/images/service-webdevelopment.gif'
@@ -21,11 +23,15 @@ import cardBottomDesign from '../assets/images/service-card-bottom.png'
 //---------------------- Testimonials image ----------------
 import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
 
-//---------------------- Testimonials image ----------------
+//---------------------- footer background image ----------------
 import footerBgImage from '../assets/images/footer-bg.jpg'
 
-import banner1 from '../assets/images/banner.jpg'
-import banner2 from '../assets/images/banner2.jpg'
+//---------------------- portfolio images ----------------
+import adhischool from '../assets/images/adhischool.jpg'
+import newYou from '../assets/images/newYou.jpg'
+import spotisan from '../assets/images/spotisan.jpg'
+
+
 
 export const slides = [carousal4, carousal1, carousal2, carousal3];
 export const about = [aboutIcon1, aboutIcon2, aboutIcon3];
@@ -70,7 +76,31 @@ export const testimonialArray = [
         comment: 'We’ve been working with Tricta for quite a long time, and we intend to continue our business relationship because of the ease to doing business with them, and ability to communicate with them at any point. Their dynamic team always comes with quick, yet robust solutions whenever a requirement arises, and hence we don’t think we need another partner for any of our IT development needs, anytime soon.',
     },
 ]
+
+
+export const portfolioArray = [
+    {
+        image: adhischool,
+        icon:'bx-window-alt',
+        heading: "product name ",
+        category: "website"
+    },
+
+    {
+        image: newYou,
+        icon: 'bx-mobile-alt',
+        heading: "product name ",
+        category: "mobile app"
+    },
+
+    {
+        image: spotisan,
+        icon:'bx-window-alt',
+        heading: "product name ",
+        category: "website"
+    },
+]
 export const assets = {
     logo, headerCircle, background, aboutUsImg, cardBottomDesign, testimonialUserIcon,
-    footerBgImage, banner1, banner2, vector
+    footerBgImage, adhischool
 }

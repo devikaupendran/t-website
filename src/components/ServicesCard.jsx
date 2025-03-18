@@ -4,12 +4,15 @@ import { assets } from '../assets/assets'
 
 const ServicesCard = () => {
     return (
-        <div className='flex flex-col justify-center items-center lg:flex-row gap-20 mt-[64px]'>
+        <div className='flex flex-col justify-center items-center lg:flex-row gap-10 xl:gap-20 mt-[64px] px-10 lg:px-[40px] xl:px-[6%]'>
             {
                 detailsOfServicesCard.map((card, index) => {
                     return (
 
-                        <div key={index} className='w-[300px] h-[320px] md:w-[380px] md:h-[410px] lg:w-[360px] lg:h-[390px] rounded-[20px] flex flex-col  items-center relative customCard cursor-pointer hover:scale-105 transition ease duration-300'>
+                        <div key={index} className='w-[300px] h-[320px] md:w-[380px] md:h-[410px] lg:w-[360px] lg:h-[390px] rounded-[20px] flex flex-col  
+                                        items-center relative customCard cursor-pointer hover:scale-105 transition ease duration-300'>
+
+                            {/* --------- image --------- */}     
                             <div>
                                 <img src={card.imageGif} alt="card image" className=' w-[100px] h-[100px] md:w-[130px] md:h-[130px] mt-[30px] rounded-full' />
                             </div>
