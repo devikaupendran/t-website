@@ -13,7 +13,7 @@ const ServicesSection = () => {
                 
                 {/* ----------- sub-heading ----------- */}
                 <div className='pt-[38px] px-10 lg:px-[80px] xl:px-[6%]'>
-                    <h1 className='text-[38px] md:text-[64px] xl:text-[80px] text-[#5B5B5B]'>What we can do for you</h1>
+                    <h1 className='text-[30px] md:text-[64px] xl:text-[80px] text-[#5B5B5B]'>What we can do for you</h1>
                 </div>
 
                 <ServicesCard />

@@ -3,7 +3,7 @@ import { portfolioArray } from '../assets/assets'
 
 const PortfolioSection = () => {
     return (
-        <div className='w-full h-max mb-60 px-10 '>
+        <div className='w-full h-max mb-60 '>
 
             <div className='w-max pt-[63px] px-10  lg:px-[80px] xl:px-[6%]'>
                 <h2 className='text-[#ED7F13] bg-[#ebebeb] shadow-sm p-3 px-6 rounded-lg text-[20px] md:text-[36px]'>PORTFOLIO</h2>
@@ -11,11 +11,11 @@ const PortfolioSection = () => {
 
             {/* ----------- sub-heading ----------- */}
             <div className='pt-[38px] px-10 lg:px-[80px] xl:px-[6%]'>
-                <h1 className='text-[38px] md:text-[64px] xl:text-[80px] text-[#5B5B5B]'>Our Selected Works</h1>
+                <h1 className='text-[30px] md:text-[64px] xl:text-[80px] text-[#5B5B5B]'>Our Selected Works</h1>
             </div>
 
             {/* ----------- portfolio container ------------  */}
-            <div className='w-full h-max flex justify-center mt-[30px]'>
+            <div className='w-full h-max flex justify-center mt-[64px]'>
 
                 <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-40 '>
                     {

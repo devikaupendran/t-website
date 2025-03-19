@@ -46,7 +46,7 @@ const Navbar = () => {
                     backgroundColor: '#ff4a17',
                     color: '#fff',
                     transition: 'all 0.3s ease'
-                  }
+                }
                 : {
                     borderColor: '#ff4a17',
                     borderWidth: '1px',
@@ -65,7 +65,7 @@ const Navbar = () => {
         setTimeout(() => {
             setIsMenuOpen(false);
             setIsAnimating(false);
-        }, 500); // Match this to your animation duration
+        }, 500); 
     };
 
     return (
@@ -106,47 +106,50 @@ const Navbar = () => {
 
 
             {/* ------ menu options --------  */}
-            {(isMenuOpen || isAnimating) && (
-                <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6 custom-menubar backdrop-blur-md text-black`}
-                    style={{
-                        animation: isAnimating ? 'menuCloseAnimation 0.5s forwards' : 'menuOpenAnimation 0.5s forwards',
-                    }}>
+            {
+                (isMenuOpen || isAnimating) &&
+                (
+                    <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6  backdrop-blur-md text-black`}
+                        style={{
+                            animation: isAnimating ? 'menuCloseAnimation 0.5s forwards' : 'menuOpenAnimation 0.5s forwards',
+                        }}>
 
-                    <div className='w-full relative'>
-                        <img src={assets.close} alt="" className='cursor-pointer absolute right-0 text-5xl' onClick={closeMenu} />
+                        <div className='w-full relative'>
+                            <img src={assets.close} alt="" className='cursor-pointer absolute top-3 right-3 text-5xl' onClick={closeMenu} />
+                        </div>
+
+                        <NavLink to={'/'} onClick={closeMenu}
+                            className='list-none font-semibold text-[22px] w-full text-center mt-12 p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            <li>HOME</li>
+                        </NavLink>
+
+                        <NavLink to={'/about-us'} onClick={closeMenu}
+                            className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            <li>ABOUT US</li>
+                        </NavLink>
+
+                        <NavLink to={'/services'} onClick={closeMenu}
+                            className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            <li>SERVICES</li>
+                        </NavLink>
+
+                        <NavLink to={'/products'} onClick={closeMenu}
+                            className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            <li>PRODUCTS</li>
+                        </NavLink>
+
+                        <NavLink to={'/portfolio'} onClick={closeMenu}
+                            className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            <li>PORTFOLIO</li>
+                        </NavLink>
+
+                        <NavLink to={'/contact-us'} onClick={closeMenu}
+                            className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            <li>CONTACT US</li>
+                        </NavLink>
                     </div>
-
-                    <NavLink to={'/'} onClick={closeMenu}
-                        className='list-none w-full text-center mt-10 p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
-                        <li>HOME</li>
-                    </NavLink>
-
-                    <NavLink to={'/about-us'} onClick={closeMenu}
-                        className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
-                        <li>ABOUT US</li>
-                    </NavLink>
-
-                    <NavLink to={'/services'} onClick={closeMenu}
-                        className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
-                        <li>SERVICES</li>
-                    </NavLink>
-
-                    <NavLink to={'/products'} onClick={closeMenu}
-                        className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
-                        <li>PRODUCTS</li>
-                    </NavLink>
-
-                    <NavLink to={'/portfolio'} onClick={closeMenu}
-                        className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
-                        <li>PORTFOLIO</li>
-                    </NavLink>
-
-                    <NavLink to={'/contact-us'} onClick={closeMenu}
-                        className='list-none w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
-                        <li>CONTACT US</li>
-                    </NavLink>
-                </div>
-            )}
+                )
+            }
 
         </div>
     )
