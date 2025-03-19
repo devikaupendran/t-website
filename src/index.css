@@ -95,19 +95,28 @@
 
 /* ------------ animation for menu -------------  */
 
-.custom-menubar {
-    animation-name: animatetop;
-    animation-duration: 0.7s;
-}
-
-/* Animation from top to bottom */
-@keyframes animatetop {
+/* Animation for opening - slide down from top */
+@keyframes menuOpenAnimation {
     from {
         top: -300px;
+        opacity: 0;
     }
 
     to {
         top: 0px;
-        left: 0;
+        opacity: 1;
+    }
+}
+
+/* Animation for closing - slide up to top */
+@keyframes menuCloseAnimation {
+    from {
+        top: 0px;
+        opacity: 1;
+    }
+
+    to {
+        top: -300px;
+        opacity: 0;
     }
 }

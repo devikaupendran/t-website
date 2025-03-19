@@ -28,7 +28,7 @@ import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
 import footerBgImage from '../assets/images/footer-bg.jpg'
 
 //---------------------- product  image ----------------
-import productBanner from '../assets/images/banner.jpg'
+import productBanner from '../assets/images/banner.png'
 import monitor from '../assets/images/monitor.svg'
 
 //---------------------- portfolio images ----------------
