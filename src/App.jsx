@@ -6,9 +6,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contactus from './pages/Contactus';
 import Products from './pages/Products';
-import Services from './pages/Services';
+import AllServiceList from './pages/AllServiceList';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
+import ServiceDetails from './pages/ServiceDetails';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -33,9 +34,10 @@ const App = () => {
                             <Route path='/' element={<Home />} />
                             <Route path='/contact-us' element={<Contactus />} />
                             <Route path='/products' element={<Products />} />
-                            <Route path='/services' element={<Services />} />
+                            <Route path='/services' element={<AllServiceList />} />
                             <Route path='/portfolio' element={<Portfolio />} />
                             <Route path='/about-us' element={<About />} />
+                            <Route path="/service/:serviceId" element={<ServiceDetails />} />
                         </Routes>
                         {/* <Footer />  */}
                     </>

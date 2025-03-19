@@ -30,7 +30,7 @@ const Testimonials = () => {
                 </div>
 
                 <div className='pt-[38px]'>
-                    <h1 className='text-[30px] sm:text-[64px] text-[#5B5B5B]'>What our client's say</h1>
+                    <h1 className='text-[30px] md:text-[40px] xl:text-[56px] text-[#5B5B5B]'>What our client's say</h1>
                 </div>
             </div>
 

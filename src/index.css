@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-3xl: 120rem;
+  }
+
 /* body {
-  overflow-x: hidden;
+  overflow-x: hidden; 
 } */
+
+.banner::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 /* ------------- animation for the circle -----------  */
 
 @keyframes circleSlideInFromRight {
@@ -26,7 +37,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px 2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-/* ------------- testimonial message shape  -----------  */
+/* ------------------ testimonial message shape  ------------------  */
 .message {
     position: absolute;
     top: 50%;
@@ -36,7 +47,7 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ------------------ testimonial message quote mark -----------  */
+/* ------------------ testimonial message quote mark ------------------  */
 
 .description p::before {
     content: open-quote;
@@ -93,7 +104,7 @@
 }
 
 
-/* ------------ animation for menu -------------  */
+/* ------------------ animation for menu ------------------  */
 
 /* Animation for opening - slide down from top */
 @keyframes menuOpenAnimation {

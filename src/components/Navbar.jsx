@@ -121,7 +121,7 @@ const Navbar = () => {
                         <NavLink to={'/'} onClick={closeMenu}
                             className='list-none font-semibold text-[22px] w-full text-center mt-12 p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
                             <li>HOME</li>
-                        </NavLink>
+                        </NavLink>  
 
                         <NavLink to={'/about-us'} onClick={closeMenu}
                             className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>

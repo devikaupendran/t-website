@@ -6,7 +6,7 @@ const Banner = () => {
     return (
 
 
-        <div className='flex item-center justify-center  w-[100%]   h-195'
+        <div className='banner flex item-center justify-center  w-[100%] overflow-x-auto h-195 '
             style={{ backgroundImage: `url(${assets.productBanner})`, backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         </div>
     )

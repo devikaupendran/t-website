@@ -11,7 +11,7 @@ const PortfolioSection = () => {
 
             {/* ----------- sub-heading ----------- */}
             <div className='pt-[38px] px-10 lg:px-[80px] xl:px-[6%]'>
-                <h1 className='text-[30px] md:text-[64px] xl:text-[80px] text-[#5B5B5B]'>Our Selected Works</h1>
+                <h1 className='text-[30px] md:text-[40px] xl:text-[56px] text-[#5B5B5B]'>Our Selected Works</h1>
             </div>
 
             {/* ----------- portfolio container ------------  */}

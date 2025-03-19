@@ -16,9 +16,6 @@ import aboutIcon3 from '../assets/images/about-icon3.png'
 import aboutUsImg from '../assets/images/about-us-img.png'
 
 // ---------------------- Services images ----------------
-import mobileDevelopment from '../assets/images/service-mobileDevelopment.gif'
-import webDevelopment from '../assets/images/service-webdevelopment.gif'
-import webDesign from '../assets/images/service-webdesign.gif'
 import cardBottomDesign from '../assets/images/service-card-bottom.png'
 
 //---------------------- Testimonials image ----------------
@@ -40,24 +37,7 @@ import spotisan from '../assets/images/spotisan.jpg'
 
 export const slides = [carousal4, carousal1, carousal2, carousal3];
 export const about = [aboutIcon1, aboutIcon2, aboutIcon3];
-export const detailsOfServicesCard = [
-    {
-        imageGif: mobileDevelopment,
-        heading: 'Mobile Applications',
-        subHeading: 'Build the perfect application to keep your business moving forward.'
-    },
-    {
-        imageGif: webDesign,
-        heading: 'Website Designing',
-        subHeading: 'Your business deserves a unique identity. Consult with us to know the best design and development options.'
-    },
 
-    {
-        imageGif: webDevelopment,
-        heading: 'Web Applications',
-        subHeading: 'Develop a Web Application that is Agile, Scalable and Robust.'
-    },
-]
 
 export const testimonialArray = [
     {
