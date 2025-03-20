@@ -32,7 +32,7 @@ const ServiceDetails = () => {
 
                     <div className='flex flex-col gap-10'>
                         <h1 className='text-[60px] md:text-[75px] font-semibold  '>{service.heading}</h1>
-                        <p className='w-full text-[17px] lg:text-[22px]  text-[#cac0c0] '>{service.description}</p>
+                        <p className='w-full text-[17px] lg:text-[22px]  text-justify text-[#cac0c0] '>{service.description}</p>
 
                         {/* ------------------- what we offer section --------------  */}
 
@@ -40,7 +40,7 @@ const ServiceDetails = () => {
 
                             <div className='w-full lg:w-[70%] flex flex-col gap-10'>
                                 <h2 className='text-[37px] font-bold'>What we offer ?</h2>
-                                <p className='leading-8'>{service.offer}</p>
+                                <p className='leading-8 text-justify'>{service.offer}</p>
                             </div>
 
                             <div className='w-full  lg:w-[30%] '>
