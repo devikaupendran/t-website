@@ -43,7 +43,7 @@ const ServiceDetails = () => {
                                 <p className='leading-8 text-justify'>{service.offer}</p>
                             </div>
 
-                            <div className='w-full  lg:w-[30%] '>
+                            <div className='w-full h-400 lg:h-full  lg:w-[30%] '>
                                 <img src={service.image} alt="service" className='object-cover h-full rounded-[20px]' />
                             </div>
                         </div>

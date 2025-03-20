@@ -115,7 +115,7 @@ const Navbar = () => {
             {
                 (isMenuOpen || isAnimating) &&
                 (
-                    <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6  backdrop-blur-md text-black`}
+                    <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6  backdrop-blur-md ${isWhiteColor ? 'text-white' : 'text-black'}`}
                         style={{
                             animation: isAnimating ? 'menuCloseAnimation 0.5s forwards' : 'menuOpenAnimation 0.5s forwards',
                         }}>
