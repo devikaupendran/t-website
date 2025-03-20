@@ -1,7 +1,7 @@
 import React from 'react'
-import { servicesCardDetails } from '../assets/servicesData'
-import { assets } from '../assets/assets'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { servicesCardDetails } from '../assets/service-assets';
+import { serviceAssets } from '../assets/service-assets';
 
 const ServicesCardLayout = ({ limit }) => {
 
@@ -36,12 +36,12 @@ const ServicesCardLayout = ({ limit }) => {
                             {/* --------------- Heading and sub-heading --------------- */}
                             <div className='text-center p-[23px]'>
                                 <h1 className={`text-[20px] md:text-[28px] text-[#ED7F13] my-2 md:my-[10px]  ${isHomePage ? '' : '3xl:my-3 3xl:text-[37px]'} font-medium`}>{card.heading}</h1>
-                                <p className={`text-[12px] md:text-[22px] lg:text-[16px]  ${isHomePage ? '' : '3xl:text-[21px]'}`}>{card.description}</p>
+                                <p className={`text-[12px] md:text-[22px] lg:text-[16px]  ${isHomePage ? '' : '3xl:text-[21px]'}`}>{card.subHeading}</p>
                             </div>
 
                             {/* --------------- Bottom image --------------- */}
                             <div className='absolute right-0 bottom-0 '>
-                                <img src={assets.cardBottomDesign} className={`rounded-br-[20px] overflow-hidden  ${isHomePage ? '': '3xl:w-[520px]'}`} alt="" />
+                                <img src={serviceAssets.cardBottomDesign} className={`rounded-br-[20px] overflow-hidden  ${isHomePage ? '': '3xl:w-[520px]'}`} alt="" />
                             </div>
                         </div>
                     )

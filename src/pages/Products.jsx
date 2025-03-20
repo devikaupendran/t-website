@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets } from '../assets/assets'
+import { productAssets } from '../assets/product-assets'
 import Banner from '../components/Banner'
 
 const Products = () => {
@@ -19,7 +19,7 @@ const Products = () => {
                     </div>
 
                     <div className='w-full xl:w-[50%]'>
-                        <img src={assets.monitor} className='w-full' />
+                        <img src={productAssets.monitor} className='w-full' />
                     </div>
                 </div>
 

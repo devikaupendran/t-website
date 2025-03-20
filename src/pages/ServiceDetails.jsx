@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { servicesCardDetails } from '../assets/servicesData'
-import { banners } from '../assets/servicesData'
+import { servicesCardDetails } from '../assets/service-assets' 
+import { serviceAssets } from '../assets/service-assets'
 
 const ServiceDetails = () => {
     const { serviceId } = useParams();  // Get serviceId from the URL
@@ -14,25 +14,49 @@ const ServiceDetails = () => {
     return (
 
         <div className='w-full'>
-            <div className='h-130 w-full relative'>
-                <img src={banners.mobileBanner} alt="" className='h-full w-full' />
 
-                <div className='w-70 h-70 rounded-full   flex items-center justify-center mt-10  absolute'
+            {/* ----------------------------------- image section -----------------------------------  */}
+            <div className='h-135 w-full relative bg-[#28323a]'>
+                <div className='w-full h-full opacity-20' style={
+                    {
+                        backgroundImage: `url(${serviceAssets.serviceBanner})`,
+                        backgroundAttachment: 'fixed',
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',    
+                        backgroundRepeat: 'no-repeat'
+                    }
+                }></div>
+
+                {/* ---------- heading ------------- */}
+                <div className=' absolute' style={
+                    {
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translateX(-50%) translateY(-50%)'
+                    }
+                }>
+                    <h1 className='text-5xl font-semibold text-white'>{service.heading}</h1>
+                </div>
+
+                {/* -------------- icon image -------------  */}
+                <div className='w-60 h-60 rounded-full bg-red-400 flex items-center justify-center  absolute'
                     style={
                         {
-                            bottom: '-100px',
                             left: '50%',
-                            transform: 'translateX(-50%)',
+                            transform: 'translateX(-50%) translateY(-50%)',
                         }
                     } >
-                    <img src={service.imageGif} alt="" className='w-60 h-60 rounded-full m-4' />
+                    <div >
+                        <img src={service.imageGif} alt="" className='w-[100%] h-[100%] rounded-full  object-cover' />
+                    </div>
                 </div>
             </div>
 
-
-            <div className='text-[2xl]'>
-                <h1>{service.heading}</h1>
+            {/* ----------------------------------- description -----------------------------------  */}
+            <div className='w-full flex justify-center '>
+                <p className='mt-40 text-[22px] text-[#6a6a6a] max-w-[800px]'>{service.description}</p>
             </div>
+
         </div>
 
     );

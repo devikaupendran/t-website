@@ -1,5 +1,5 @@
 import React from 'react'
-import { portfolioArray } from '../assets/assets'
+import { portfolioArray } from '../assets/portfolio-assets'
 
 const PortfolioSection = () => {
     return (
@@ -42,8 +42,9 @@ const PortfolioSection = () => {
                                                 group-hover:border-1 group-hover:border-[#ff4a17] group-hover:bg-white transition-all ease-in duration-400'
                                                 style={
                                                     {
+
                                                         top: '-50px',
-                                                        left: '50%', 
+                                                        left: '50%',
                                                         transform: 'translateX(-50%)',
                                                     }
 

@@ -3,20 +3,12 @@ import headerCircle from '../assets/images/header-circle.png'
 import background from '../assets/images/background.png'
 import close from '../assets/images/close.svg'
 
-// ------------------------ carousal and products images ------------------------ 
-import carousal1 from '../assets/images/carousal1.jpg'
-import carousal2 from '../assets/images/carousal2.jpg'
-import carousal3 from '../assets/images/carousal3.jpg'
-import carousal4 from '../assets/images/carousal4.jpg'
-
-// ------------------------- About us images -------------------------
+// ------------------------- About us section icons -------------------------
 import aboutIcon1 from '../assets/images/about-icon1.png'
 import aboutIcon2 from '../assets/images/about-icon2.png'
 import aboutIcon3 from '../assets/images/about-icon3.png'
 import aboutUsImg from '../assets/images/about-us-img.png'
 
-// ---------------------- Services images ----------------
-import cardBottomDesign from '../assets/images/service-card-bottom.png'
 
 //---------------------- Testimonials image ----------------
 import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
@@ -24,18 +16,7 @@ import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
 //---------------------- footer background image ----------------
 import footerBgImage from '../assets/images/footer-bg.jpg'
 
-//---------------------- product  image ----------------
-import productBanner from '../assets/images/banner.png'
-import monitor from '../assets/images/monitor.svg'
 
-//---------------------- portfolio images ----------------
-import adhischool from '../assets/images/adhischool.jpg'
-import newYou from '../assets/images/newYou.jpg'
-import spotisan from '../assets/images/spotisan.jpg'
-
-
-
-export const slides = [carousal4, carousal1, carousal2, carousal3];
 export const about = [aboutIcon1, aboutIcon2, aboutIcon3];
 
 
@@ -63,29 +44,8 @@ export const testimonialArray = [
 ]
 
 
-export const portfolioArray = [
-    {
-        image: adhischool,
-        icon: 'bx-window-alt',
-        heading: "product name ",
-        category: "website"
-    },
 
-    {
-        image: newYou,
-        icon: 'bx-mobile-alt',
-        heading: "product name ",
-        category: "mobile app"
-    },
-
-    {
-        image: spotisan,
-        icon: 'bx-window-alt',
-        heading: "product name ",
-        category: "website"
-    },
-]
 export const assets = {
-    logo, headerCircle, background, aboutUsImg, cardBottomDesign, testimonialUserIcon,
-    footerBgImage, productBanner, monitor, close
+    logo, headerCircle, background, aboutUsImg, testimonialUserIcon,
+    footerBgImage, close
 }

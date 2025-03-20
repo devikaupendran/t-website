@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { slides } from '../assets/assets'
+import { productCarousalSlides } from '../assets/product-assets';
 
 const Carousel = () => {
 
@@ -7,12 +7,12 @@ const Carousel = () => {
 
     // Function to move to the previous slide
     const previousSlide = () => {
-        setCurrent(current === 0 ? slides.length - 1 : current - 1);
+        setCurrent(current === 0 ? productCarousalSlides.length - 1 : current - 1);
     };
 
     // Function to move to the next slide
     const nextSlide = () => {
-        setCurrent(current === slides.length - 1 ? 0 : current + 1);
+        setCurrent(current === productCarousalSlides.length - 1 ? 0 : current + 1);
     };
 
     // Set up auto-slide
@@ -26,10 +26,10 @@ const Carousel = () => {
 
     return (
         <div className='w-full md:w-[68%] rounded-[20px]'>
-            <div className='overflow-hidden mx-3 rounded-[20px] relative left-0 top-10  md:left-6 xl:left-20 xl:w-[90%]  xl:top-25' style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>
+            <div className='overflow-hidden mx-3 rounded-[20px] relative left-0 top-10  md:left-6 xl:left-20 xl:w-[90%] xl:top-15 2xl:top-25' style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>
                 <div className={`flex transition ease-in-out duration-700`} style={{ transform: `translateX(-${current * 100}%)` }}>
                     {
-                        slides.map((s, index) => (
+                        productCarousalSlides.map((s, index) => (
                             <img key={index} src={s} className='rounded-[20px] object-contain' />
                         ))
                     }
@@ -56,7 +56,7 @@ const Carousel = () => {
                 <div className='absolute bottom-6 right-0 left-0'>
                     <div className='flex items-center justify-center gap-2'>
                         {
-                            slides.map((_, i) => (
+                            productCarousalSlides.map((_, i) => (
                                 <div key={i} className={`transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}></div>
                             ))
                         }
