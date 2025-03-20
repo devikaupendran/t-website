@@ -2,6 +2,7 @@ import React from 'react'
 
 import { assets } from '../assets/assets'
 import Carousel from './Carousel'
+import HeaderCarousel from './carousel/HeaderCarousel'
 
 const Header = () => {
     return (
@@ -12,7 +13,8 @@ const Header = () => {
             </div>
 
             <div className='w-full'>
-                <Carousel />
+                {/* <Carousel /> */}
+                <HeaderCarousel/>
             </div>
         </div>
 

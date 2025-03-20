@@ -15,7 +15,7 @@ const Testimonials = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             nextSlide();
-        }, 3000);
+        }, 6000);
 
         return () => clearInterval(intervalId);
     }, []);
@@ -73,7 +73,8 @@ const Testimonials = () => {
                         <div className='flex items-center justify-center gap-2'>
                             {
                                 testimonialArray.map((_, i) => (
-                                    <div key={i} className={`transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}></div>
+                                    <div key={i} className={`transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}
+                                        onClick={() => setCurrent(i)}></div>
                                 ))
                             }
                         </div>

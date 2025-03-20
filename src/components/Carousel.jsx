@@ -38,7 +38,7 @@ const Carousel = () => {
                 {/*----------------- Left and Right buttons -------------------------*/}
 
                 <div className="absolute inset-0 flex justify-between items-center p-4">
-                    
+
                     <button
                         onClick={previousSlide}
                         className="hidden md:block p-2 rounded-full shadow-xl border-gray-100 hover:bg-gray-400 transition-all ease-in duration-370 cursor-pointer w-10 ">
@@ -57,7 +57,8 @@ const Carousel = () => {
                     <div className='flex items-center justify-center gap-2'>
                         {
                             productCarousalSlides.map((_, i) => (
-                                <div key={i} className={`transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}></div>
+                                <div key={i} className={`transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${current === i ? 'bg-[#ED7F13]' : 'bg-gray-300'}`}
+                                    onClick={() => setCurrent(i)}></div>
                             ))
                         }
                     </div>
