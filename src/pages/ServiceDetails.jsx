@@ -28,7 +28,7 @@ const ServiceDetails = () => {
                 }></div>
 
                 {/* ----------------------------------- heading and description -----------------------------------  */}
-                <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[80vh] custom-service lg:px-30'>
+                <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[78vh] custom-service lg:px-30'>
 
                     <div className='flex flex-col gap-10'>
                         <h1 className='text-[60px] md:text-[75px] font-semibold  '>{service.heading}</h1>
