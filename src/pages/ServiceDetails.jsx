@@ -28,7 +28,7 @@ const ServiceDetails = () => {
                 }></div>
 
                 {/* ----------------------------------- heading and description -----------------------------------  */}
-                <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[78vh] custom-service lg:px-30'>
+                <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[77vh] custom-service lg:px-30'>
 
                     <div className='flex flex-col gap-10'>
                         <h1 className='text-[60px] md:text-[75px] font-semibold  '>{service.heading}</h1>
@@ -43,7 +43,7 @@ const ServiceDetails = () => {
                                 <p className='leading-8 text-justify'>{service.offer}</p>
                             </div>
 
-                            <div className='w-full h-400 lg:h-full  lg:w-[30%] '>
+                            <div className='w-full h-full  lg:w-[30%]'>
                                 <img src={service.image} alt="service" className='object-cover h-full rounded-[20px]' />
                             </div>
                         </div>

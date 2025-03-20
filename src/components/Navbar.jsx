@@ -10,9 +10,11 @@ const Navbar = () => {
     const location = useLocation(); // Get the current path
 
     const [isWhiteColor, setIsWhiteColor] = useState(false);
+    const [serviceColor, setServiceColor] = useState(false);
     useEffect(() => {
         const path = location.pathname;
-        setIsWhiteColor(path === '/' || path.startsWith('/service/'))
+        setIsWhiteColor(path === '/' || path.startsWith('/service/'));
+        setServiceColor(path.startsWith('/service/'))
     }, [location.pathname])
 
     // conditions based on the current path
@@ -115,7 +117,7 @@ const Navbar = () => {
             {
                 (isMenuOpen || isAnimating) &&
                 (
-                    <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6  backdrop-blur-md ${isWhiteColor ? 'text-white' : 'text-black'}`}
+                    <div className={`absolute top-0 left-0 w-full flex flex-col items-center gap-6  backdrop-blur-md ${serviceColor ? 'text-white' : 'text-black'}`}
                         style={{
                             animation: isAnimating ? 'menuCloseAnimation 0.5s forwards' : 'menuOpenAnimation 0.5s forwards',
                         }}>
