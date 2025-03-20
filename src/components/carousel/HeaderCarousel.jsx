@@ -30,7 +30,7 @@ const HeaderCarousel = () => {
     const nextRef = useRef(null);
 
     return (
-        <div className="swiper-container relative  md:w-[68%] rounded-[20px] left-0 top-10  md:left-6 xl:left-20 xl:top-15 2xl:top-17">
+        <div className="swiper-container relative w-full md:h-full md:w-[68%] rounded-[20px] left-0 top-10  md:left-6 xl:left-20 xl:top-15 2xl:top-17">
             <Swiper
                 slidesPerView= {1}
                 spaceBetween={30}
