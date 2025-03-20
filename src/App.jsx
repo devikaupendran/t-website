@@ -39,7 +39,7 @@ const App = () => {
                             <Route path='/about-us' element={<About />} />
                             <Route path="/service/:serviceId" element={<ServiceDetails />} />
                         </Routes>
-                        {/* <Footer />  */}
+                        <Footer /> 
                     </>
                 )
             }

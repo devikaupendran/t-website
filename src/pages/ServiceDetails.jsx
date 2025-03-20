@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { servicesCardDetails } from '../assets/service-assets' 
+import { servicesCardDetails } from '../assets/service-assets'
 import { serviceAssets } from '../assets/service-assets'
 
 const ServiceDetails = () => {
@@ -13,50 +13,47 @@ const ServiceDetails = () => {
 
     return (
 
-        <div className='w-full'>
+        <div className='w-full absolute top-0 '>
 
             {/* ----------------------------------- image section -----------------------------------  */}
-            <div className='h-135 w-full relative bg-[#28323a]'>
+            <div className='h-[100vh] w-[100%] relative bg-[#000000]'>
                 <div className='w-full h-full opacity-20' style={
                     {
                         backgroundImage: `url(${serviceAssets.serviceBanner})`,
                         backgroundAttachment: 'fixed',
                         backgroundPosition: 'center',
-                        backgroundSize: 'cover',    
+                        backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'
                     }
                 }></div>
 
-                {/* ---------- heading ------------- */}
-                <div className=' absolute' style={
-                    {
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translateX(-50%) translateY(-50%)'
-                    }
-                }>
-                    <h1 className='text-5xl font-semibold text-white'>{service.heading}</h1>
-                </div>
+                {/* ----------------------------------- heading and description -----------------------------------  */}
+                <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[80vh] custom-service lg:px-30'>
 
-                {/* -------------- icon image -------------  */}
-                <div className='w-60 h-60 rounded-full bg-red-400 flex items-center justify-center  absolute'
-                    style={
-                        {
-                            left: '50%',
-                            transform: 'translateX(-50%) translateY(-50%)',
-                        }
-                    } >
-                    <div >
-                        <img src={service.imageGif} alt="" className='w-[100%] h-[100%] rounded-full  object-cover' />
+                    <div className='flex flex-col gap-10'>
+                        <h1 className='text-[60px] md:text-[75px] font-semibold  '>{service.heading}</h1>
+                        <p className='w-full text-[17px] lg:text-[22px]  text-[#cac0c0] '>{service.description}</p>
+
+                        {/* ------------------- what we offer section --------------  */}
+
+                        <div className='flex flex-col gap-10 lg:flex-row lg:gap-20 mt-20 h-[400px]'>
+
+                            <div className='w-full lg:w-[70%] flex flex-col gap-10'>
+                                <h2 className='text-[37px] font-bold'>What we offer ?</h2>
+                                <p className='leading-8'>{service.offer}</p>
+                            </div>
+
+                            <div className='w-full  lg:w-[30%] '>
+                                <img src={service.image} alt="service" className='object-cover h-full rounded-[20px]' />
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
-            </div>
 
-            {/* ----------------------------------- description -----------------------------------  */}
-            <div className='w-full flex justify-center '>
-                <p className='mt-40 text-[22px] text-[#6a6a6a] max-w-[800px]'>{service.description}</p>
             </div>
-
         </div>
 
     );

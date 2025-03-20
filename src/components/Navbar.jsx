@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
 import { NavLink, useLocation } from 'react-router-dom'
 
@@ -9,8 +9,14 @@ const Navbar = () => {
     const [isHovering, setIsHovering] = useState(false);
     const location = useLocation(); // Get the current path
 
+    const [isWhiteColor, setIsWhiteColor] = useState(false);
+    useEffect(() => {
+        const path = location.pathname;
+        setIsWhiteColor(path === '/' || path.startsWith('/service/'))
+    }, [location.pathname])
+
     // conditions based on the current path
-    const textColor = location.pathname === '/' ? 'text-white' : 'text-black';
+
     const menuColor = location.pathname === '/' ? 'text-white' : 'text-[#ff4a17]';
     const padding = location.pathname === '/' ? 'pt-[10px] lg:pt-[55px]' : 'pt-0';
     const boxShadow = location.pathname === '/' ? 'shadow-none' : 'shadow-xl';
@@ -65,7 +71,7 @@ const Navbar = () => {
         setTimeout(() => {
             setIsMenuOpen(false);
             setIsAnimating(false);
-        }, 500); 
+        }, 500);
     };
 
     return (
@@ -75,13 +81,13 @@ const Navbar = () => {
             {/* -------- Logo ------  */}
             <NavLink to='/'>
                 <div>
-                    <img src={assets.logo} className='w-25 md:w-[180px] md:h-[55px] cursor-pointer' />
+                    <img src={assets.logo} className='w-25 md:w-[180px] md:h-[55px] xl:w-[100%] cursor-pointer' />
                 </div>
             </NavLink>
 
             {/* -------- Options ------  */}
             <div>
-                <ul className={`hidden xl:flex justify-around items-center gap-8 font-semibold ${textColor}`}>
+                <ul className={`hidden xl:flex justify-around items-center gap-8  ${isWhiteColor ? 'text-white' : 'text-black'}`}>
 
                     <NavLink to={'/'}><li>HOME</li> </NavLink>
                     <NavLink to={'/about-us'}><li>ABOUT US</li></NavLink>
@@ -121,7 +127,7 @@ const Navbar = () => {
                         <NavLink to={'/'} onClick={closeMenu}
                             className='list-none font-semibold text-[22px] w-full text-center mt-12 p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
                             <li>HOME</li>
-                        </NavLink>  
+                        </NavLink>
 
                         <NavLink to={'/about-us'} onClick={closeMenu}
                             className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>

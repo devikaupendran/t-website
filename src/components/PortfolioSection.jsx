@@ -32,7 +32,7 @@ const PortfolioSection = () => {
 
                                     {/* --------------- Sub-box container  --------------- */}
 
-                                    <div className='w-[80%] py-6 bg-white  shadow-2xs absolute bottom-[-100px] flex flex-col items-center rounded-2xl opacity-95'
+                                    <div className='w-[80%] py-6 bg-white shadow-2xs absolute bottom-[-100px] flex flex-col items-center rounded-2xl opacity-95'
                                         style={{ boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" }}>
 
                                         <div className='w-full relative'>
@@ -47,7 +47,6 @@ const PortfolioSection = () => {
                                                         left: '50%',
                                                         transform: 'translateX(-50%)',
                                                     }
-
                                                 }>
 
                                                 <i className={`bx ${portfolio.icon} text-white text-4xl md:text-6xl p-3 group-hover:text-[#ff4a17]`}></i>
@@ -57,7 +56,7 @@ const PortfolioSection = () => {
                                             {/* --------------- HEADINGS --------------- */}
                                             <div className='flex flex-col gap-3 mt-10 md:mt-14'>
                                                 <p className='group-hover:text-[#ff4a17] text-2xl md:text-3xl font-semibold text-center'>{portfolio.heading}</p>
-                                                <p className='category  md:text-2xl text-center'>{portfolio.category}</p>
+                                                <p className='category my-3 md:text-2xl text-center'>{portfolio.category}</p>
                                             </div>
                                         </div>
 

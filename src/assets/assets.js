@@ -1,6 +1,5 @@
 import logo from '../assets/images/logo.svg'
 import headerCircle from '../assets/images/header-circle.png'
-import background from '../assets/images/background.png'
 import close from '../assets/images/close.svg'
 
 // ------------------------- About us section icons -------------------------
@@ -8,7 +7,6 @@ import aboutIcon1 from '../assets/images/about-icon1.png'
 import aboutIcon2 from '../assets/images/about-icon2.png'
 import aboutIcon3 from '../assets/images/about-icon3.png'
 import aboutUsImg from '../assets/images/about-us-img.png'
-
 
 //---------------------- Testimonials image ----------------
 import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
@@ -46,6 +44,6 @@ export const testimonialArray = [
 
 
 export const assets = {
-    logo, headerCircle, background, aboutUsImg, testimonialUserIcon,
+    logo, headerCircle,  aboutUsImg, testimonialUserIcon,
     footerBgImage, close
 }
