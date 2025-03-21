@@ -18,7 +18,7 @@ const Contactus = () => {
 
 
             {/* --------------- contact details section ---------------  */}
-            <div className="container max-w-[1100px] mx-auto px-4 my-30">
+            <div className="container max-w-[1100px] mx-auto px-4 mt-15 mb-20  xl:mt-30 xl:mb-30">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
 
                     {/* -------------- row 1-------------  */}
@@ -55,7 +55,7 @@ const Contactus = () => {
                         }>
 
                         <div className='flex flex-col xl:flex-row  items-center gap-8 p-7'>
-                            <img src={assets.phone} alt="phone" className='w-30 h-30 xl:w-35 xl:h-35' />
+                            <img src={assets.phone} alt="phone" className='w-20 h-20 xl:w-35 xl:h-35' />
                             <div>
                                 <h1>+91 471 2937788</h1>
                                 <h1>+91 944 731 8527</h1>
@@ -72,7 +72,7 @@ const Contactus = () => {
                         }>
 
                         <div className='flex flex-col xl:flex-row  items-center gap-8 p-7'>
-                            <img src={assets.message} alt="message" className='w-30 h-30 xl:w-35 xl:h-35' />
+                            <img src={assets.message} alt="message" className='w-20 h-20 xl:w-35 xl:h-35' />
                             <h1>info@tricta.com</h1>
                         </div>
                     </div>
