@@ -32,7 +32,7 @@ const Portfolio = () => {
                                         <p className='absolute hidden group-hover:block top-2 left-2 bg-[#ff4a17] bg-opacity-100 text-white rounded-2xl p-3 '>{product.category}</p>
                                     </div>
 
-                                    {/* ------------------- Product name ------------------- */}
+                                    {/* ------------------- Product name -------------------*/}
                                     <div className='m-5 p-3'>
                                         <h1 className=" text-center text-xl  text-[20px] font-semibold">{product.name}</h1>
                                     </div>
