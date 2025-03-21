@@ -1,26 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { meetOurTeamArray } from '../assets/about-assets';
+import { about, meetOurTeamArray } from '../assets/about-assets';
+import { aboutUs } from '../assets/about-assets';
 
 const About = () => {
-    // Track which team card is being tapped (for mobile only)
-    const [activeMemberIndex, setActiveMemberIndex] = useState(null);
-    // Track if we're on a mobile device
-    const [isMobile, setIsMobile] = useState(false);
+
+    const [activeMemberIndex, setActiveMemberIndex] = useState(null); // Track which team card is being tapped (for mobile only)
+    const [isMobile, setIsMobile] = useState(false); // Track if we're on a mobile device
 
     // Detect if the device is mobile on component mount and window resize
     useEffect(() => {
         const checkIfMobile = () => {
             setIsMobile(window.matchMedia('(max-width: 1024px)').matches);
         };
-
-        // Check initially
-        checkIfMobile();
-
-        // Add resize listener
-        window.addEventListener('resize', checkIfMobile);
-
-        // Clean up
-        return () => window.removeEventListener('resize', checkIfMobile);
+        checkIfMobile(); // Check initially
+        window.addEventListener('resize', checkIfMobile); // Add resize listener
+        return () => window.removeEventListener('resize', checkIfMobile); // Clean up
     }, []);
 
     // Toggle the active state when a team card is tapped (on mobile only)
@@ -29,7 +23,8 @@ const About = () => {
 
         if (activeMemberIndex === index) {
             setActiveMemberIndex(null);
-        } else {
+        }
+        else {
             setActiveMemberIndex(index);
         }
     };
@@ -49,8 +44,29 @@ const About = () => {
             </div>
 
             {/* --------------------------- Our mission, vision and history --------------------------- */}
-            <div>
-               
+            <div className='flex flex-col justify-center items-center mt-40'>
+                <div className='flex flex-col max-w-[1000px] gap-10 '>
+                    {
+                        aboutUs.map((item, index) => {
+                            return (
+                                <section key={index} className='flex flex-col xl:flex-row justify-center items-center gap-3 p-5 m-2 shadow-sm '
+                                    style={
+                                        {
+                                            boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
+                                        }
+                                    }>
+                                    <div className='xl:w-[30%] h-30 xl:h-[200px]'>
+                                        <img src={item.image} alt={`${item.name}`} className='w-full h-full  object-fill' />
+                                    </div>
+                                    <div className='xl:w-[70%]'>
+                                        <h1 className='text-center text-[30px]  xl:text-justify my-2'>{item.heading}</h1>
+                                        <p className='text-justify text-wrap text-[#5c5757]'>{item.description}</p>
+                                    </div>
+                                </section>
+                            )
+                        })
+                    }
+                </div>
             </div>
 
             {/* --------------------------- our team --------------------------- */}

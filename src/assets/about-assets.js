@@ -10,11 +10,35 @@ import jomonJacob from '../assets/images/about/jomon.jpeg'
 import arunGToms from '../assets/images/about/Arun-G-Toms.png'
 import AntonyVincent from '../assets/images/about/Antony-Vincent.png'
 
+// --------- vision, mission, history image -----------
+import history from '../assets/images/about/history.svg'
+import vision from '../assets/images/about/vision.svg'
+import mission from '../assets/images/about/mission.svg'
+
 export const about = [aboutIcon1, aboutIcon2, aboutIcon3];
 
 export const aboutAsset = {
     aboutUsImg
 }
+// --------- vision, mission, history -----------
+export const aboutUs = [
+    {
+        image:vision,
+        heading:'Vision',
+        description:'Our vision is to be a global leader in software innovation, known for revolutionizing industries, transforming lives, and shaping the future of technology. We aspire to create groundbreaking solutions that redefine the possibilities of what software can achieve, driving positive change and unlocking new opportunities for businesses and individuals around the world. With a relentless focus on excellence, creativity, and customer-centricity, we aim to inspire the next generation of innovators and leave a lasting legacy of technological advancement and positive impact on society.'
+    },
+    {
+        image:mission,
+        heading:'Mission',
+        description:'Our mission is to empower businesses and individuals by delivering cutting-edge software solutions that streamline processes, drive efficiency, and unlock new possibilities. We are committed to leveraging the latest technologies, embracing innovation, and exceeding customer expectations to drive sustainable growth and create lasting value for our stakeholders. Through our passion for excellence and dedication to customer success, we aim to be a trusted partner in driving digital transformation and shaping the future of technology.'
+    },
+    {
+        image:history,
+        heading:'History',
+        description:'Launched in 2017 with a small office in India, we have grown to several centers across Asia, Australia, and North America, with our clientele from all of these places and more.'
+    },
+]
+
 
 export const meetOurTeamArray = [
     {
