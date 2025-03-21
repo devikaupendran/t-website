@@ -29,7 +29,7 @@ const Contactus = () => {
                             }
                         }>
 
-                        <div className='flex flex-col xl:flex-row items-center gap-8 p-7'>
+                        <div className='flex flex-col md:flex-row items-center gap-8 p-7'>
                             <img src={assets.location} alt="location" className='w-30 h-30 xl:w-35 xl:h-35' />
                             <div className='flex flex-col justify-center  gap-3'>
 
@@ -39,7 +39,7 @@ const Contactus = () => {
                                 </div>
                                 <div>
                                     <h1 className='font-semibold text-[24px]'>INDIA</h1>
-                                    <p className='text-[16px]'>4th Floor STPI BUILDING, Technopark Campus, <br />  Kariavattom,  Trivandrum Kerala - 695581</p>
+                                    <p className='text-[16px] text-wrap'>4th Floor STPI BUILDING, Technopark Campus, Kariavattom,  Trivandrum Kerala - 695581</p>
                                 </div>
 
                             </div>
