@@ -152,7 +152,7 @@ const Navbar = () => {
                         </NavLink>
 
                         <NavLink to={'/contact-us'} onClick={closeMenu}
-                            className='list-none font-semibold text-[22px] w-full text-center p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
+                            className='list-none font-semibold text-[22px] w-full text-center pb-9 p-4 hover:bg-orange-400 hover:text-white transition-all cursor-pointer'>
                             <li>CONTACT US</li>
                         </NavLink>
                     </div>
