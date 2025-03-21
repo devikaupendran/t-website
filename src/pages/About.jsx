@@ -6,7 +6,7 @@ const About = () => {
         <div>
             <div>
                 <h1 className='text-center text-[40px] md:text-[60px] lg:text-[75px] pt-10'>About us</h1>
-                <p className='text-wrap text-[17px] lg:text-[22px]  text-justify text-[#797575] px-20 my-10'>
+                <p className='text-wrap text-[17px] lg:text-[22px]  text-justify text-[#797575] px-7 xl:px-20 my-10'>
                     We,at Tricta Technologies Pvt. Ltd, are a collection of a passionate set of creative individuals,
                     each with their own area of expertise in providing services like Web designing,
                     Web development, Web applications, Mobile applications, E-Commerce Solutions and Hosting Support,
