@@ -11,8 +11,8 @@ const Portfolio = () => {
     };
 
     // Filter portfolioData based on selected category
-    const filteredPortfolioData = selectedCategory === 'All' 
-        ? portfolioData 
+    const filteredPortfolioData = selectedCategory === 'All'
+        ? portfolioData
         : portfolioData.filter(product => product.category === selectedCategory);
 
     // Get unique categories
@@ -26,17 +26,20 @@ const Portfolio = () => {
 
             {/* Category Filter */}
             <div className="text-center mt-10">
-                <div className="flex justify-center gap-5">
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            onClick={() => handleCategoryChange(category)}
-                            className={`px-7 py-3 rounded-full text-[18px] font-medium cursor-pointer
+                <div className="flex flex-column xl:flex-row justify-center gap-5 mx-4">
+                    {
+                        categories.map((category) => (
+
+                            <button
+                                key={category}
+                                onClick={() => handleCategoryChange(category)}
+                                className={`px-4 xl:px-7 xl:py-3 rounded-full xl:text-[18px] font-medium cursor-pointer
                                 ${selectedCategory === category ? 'bg-orange-500 text-white' : 'bg-gray-200 text-gray-700'}`}
-                        >
-                            {category}
-                        </button>
-                    ))}
+                            >
+                                {category}
+                            </button>
+                        ))
+                    }
                 </div>
             </div>
 
