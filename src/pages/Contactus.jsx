@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import Map from '../components/Map'
 
 const Contactus = () => {
     return (
@@ -41,9 +42,9 @@ const Contactus = () => {
                                     <h1 className='font-semibold text-[24px]'>INDIA</h1>
                                     <p className='text-[16px] text-wrap'>4th Floor STPI BUILDING, Technopark Campus, Kariavattom,  Trivandrum Kerala - 695581</p>
                                 </div>
-
                             </div>
                         </div>
+
                     </div>
 
                     {/* -------------- row 2 -------------  */}
@@ -82,7 +83,7 @@ const Contactus = () => {
 
 
             {/* --------------- contact form section ---------------  */}
-            <div className='mb-70'>
+            <div className='mb-50'>
                 <section className="">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg border md:px-10 border-gray-200 ">
                         <h2 className="mb-4 tracking-tight text-center text-gray-800 text-[40px] md:text-[60px]">Contact Us</h2>
@@ -128,6 +129,8 @@ const Contactus = () => {
                 </section>
 
             </div>
+
+            <Map />
         </div>
     )
 }
