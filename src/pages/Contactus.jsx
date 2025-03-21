@@ -29,7 +29,7 @@ const Contactus = () => {
                             }
                         }>
 
-                        <div className='flex flex-col xl:flex-row items-center gap-8 p-7'>
+                        <div className='flex items-center gap-8 p-7'>
                             <img src={assets.location} alt="location" className='w-30 h-30 xl:w-35 xl:h-35' />
                             <div className='flex flex-col gap-3'>
 
@@ -54,7 +54,7 @@ const Contactus = () => {
                             }
                         }>
 
-                        <div className='flex flex-col xl:flex-row  items-center gap-8 p-7'>
+                        <div className='flex flex-row  items-center gap-4 xl:gap-8 p-7'>
                             <img src={assets.phone} alt="phone" className='w-20 h-20 xl:w-35 xl:h-35' />
                             <div>
                                 <h1>+91 471 2937788</h1>
@@ -71,7 +71,7 @@ const Contactus = () => {
                             }
                         }>
 
-                        <div className='flex flex-col xl:flex-row  items-center gap-8 p-7'>
+                        <div className='flex flex-row  items-center gap-4 xl:gap-8 p-7'>
                             <img src={assets.message} alt="message" className='w-20 h-20 xl:w-35 xl:h-35' />
                             <h1>info@tricta.com</h1>
                         </div>
