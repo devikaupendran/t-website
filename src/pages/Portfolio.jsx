@@ -33,7 +33,7 @@ const Portfolio = () => {
                                     </div>
 
                                     {/* Product name */}
-                                    <div className='m-5 p-3 bg-red-200'>
+                                    <div className='m-5 p-3'>
                                         <h1 className=" text-center text-xl  text-[20px] font-semibold">{product.name}</h1>
                                     </div>
                                 </div>
