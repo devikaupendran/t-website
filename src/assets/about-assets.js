@@ -6,7 +6,7 @@ import aboutUsImg from '../assets/images/about/about-us-img.png'
 
 
 // ------------ meet our team images ------------
-import jomonJacob from '../assets/images/about/Jomon-Jacob.png'
+import jomonJacob from '../assets/images/about/jomon.jpeg'
 import arunGToms from '../assets/images/about/Arun-G-Toms.png'
 import AntonyVincent from '../assets/images/about/Antony-Vincent.png'
 
