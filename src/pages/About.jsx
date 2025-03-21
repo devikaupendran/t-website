@@ -67,7 +67,7 @@ const About = () => {
                                     className={`relative ${!isMobile ? 'group' : ''} rounded-[20px] p-1`}
                                     onClick={() => handleTap(index)}
                                 >
-                                    <section className="relative h-[400px] overflow-hidden cursor-pointer rounded-[20px]">
+                                    <section className="relative w-[350px] h-[400px] overflow-hidden cursor-pointer rounded-[20px]">
                                         <img src={team.image} alt={`${team.name}`} className='h-full w-full object-cover rounded-[20px]' />
 
                                         {/* Overlay for desktop (hover) and mobile (tap) */}
