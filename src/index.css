@@ -191,7 +191,7 @@
 }
 
 /* Add this to your component's hover effect */
-.group:hover {
+.border-animate-on-hover .group:hover {
     animation: borderAnimation 1s ease-out forwards;
     border-color: #f79051;
 }
