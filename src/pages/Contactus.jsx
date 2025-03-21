@@ -18,72 +18,8 @@ const Contactus = () => {
             </div>
 
 
-            {/* --------------------------------------------- contact details section ---------------------------------------------  */}
-            <div className="container max-w-[1000px] mx-auto px-4 mt-15 mb-20 xl:mt-30 xl:mb-30">
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-
-                    {/* -------------- row 1-------------  */}
-                    <div className="col-span-1 md:col-span-2 xl:col-span-2 bg-[#FDF9ED] p-4 flex justify-center"
-                        style={
-                            {
-                                boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                            }
-                        }>
-
-                        <div className='flex flex-col md:flex-row items-center gap-8 p-7'>
-                            <img src={assets.location} alt="location" className='w-30 h-30 xl:w-35 xl:h-35' />
-                            <div className='flex flex-col justify-center  gap-3'>
-
-                                <div>
-                                    <h1 className='font-semibold text-[24px]'>UAE</h1>
-                                    <p className='text-[16px]'>Sharjah Media City, Sharjah, UAE</p>
-                                </div>
-                                <div>
-                                    <h1 className='font-semibold text-[24px]'>INDIA</h1>
-                                    <p className='text-[16px] text-wrap'>4th Floor STPI BUILDING, Technopark Campus, Kariavattom,  Trivandrum Kerala - 695581</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    {/* -------------- row 2 -------------  */}
-                    <div className="col-span-1  bg-[#FDF9ED] p-4 text-center"
-                        style={
-                            {
-                                boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                            }
-                        }>
-
-                        <div className='flex flex-row justify-center items-center gap-4 xl:gap-8 p-7'>
-                            <img src={assets.phone} alt="phone" className='w-20 h-20 xl:w-25 xl:h-25' />
-                            <div>
-                                <h1>+91 471 2937788</h1>
-                                <h1>+91 944 731 8527</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* -------------- row 3 -------------  */}
-                    <div className="col-span-1 bg-[#FDF9ED] p-4 text-center "
-                        style={
-                            {
-                                boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                            }
-                        }>
-
-                        <div className='flex flex-row justify-center  items-center gap-4 xl:gap-8 p-7'>
-                            <img src={assets.message} alt="message" className='w-20 h-20 xl:w-25 xl:h-25' />
-                            <h1>info@tricta.com</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
             {/* --------------------------------------------- contact form section ---------------------------------------------  */}
-            <div className='mb-50'>
+            <div className='my-40'>
                 <section>
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg border md:px-10 border-gray-200 shadow-lg ">
                         <h2 className="mb-4 tracking-tight text-center text-gray-800 text-[40px] md:text-[60px]">Contact Us</h2>
@@ -129,6 +65,48 @@ const Contactus = () => {
                 </section>
 
             </div>
+
+
+            {/* --------------------------------------------- contact details section ---------------------------------------------  */}
+            <div className="container max-w-[800px] mx-auto px-4 mt-15 mb-20 xl:mt-30 ">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+
+                    {/* -------------- row 2 -------------  */}
+                    <div className="col-span-1  bg-[#FDF9ED] p-4 text-center"
+                        style={
+                            {
+                                boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
+                            }
+                        }>
+
+                        <div className='flex flex-row justify-center items-center gap-4 xl:gap-8 p-7'>
+                            <img src={assets.phone} alt="phone" className='w-20 h-20 xl:w-25 xl:h-25' />
+                            <div>
+                                <h1>+91 471 2937788</h1>
+                                <h1>+91 944 731 8527</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* -------------- row 3 -------------  */}
+                    <div className="col-span-1 bg-[#FDF9ED] p-4 text-center "
+                        style={
+                            {
+                                boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
+                            }
+                        }>
+
+                        <div className='flex flex-row justify-center  items-center gap-4 xl:gap-8 p-7'>
+                            <img src={assets.message} alt="message" className='w-20 h-20 xl:w-25 xl:h-25' />
+                            <h1>info@tricta.com</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
             <Map />
         </div>

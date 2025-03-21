@@ -1,9 +1,35 @@
 import React from 'react';
+import { assets } from '../assets/assets';
 
 const Map = () => {
     return (
         <div className='flex justify-center mb-20'>
-            <div className="w-[80%]  grid  lg:grid-cols-2 gap-10 justify-center">
+            <div className="w-[90%]  grid  lg:grid-cols-2 gap-10 justify-center">
+
+                {/* -------------- row 1-------------  */}
+                <div className="col-span-1 w-[70%] mx-auto md:col-span-2 xl:col-span-2 bg-[#FDF9ED] p-4 flex justify-center"
+                    style={
+                        {
+                            boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
+                        }
+                    }>
+
+                    <div className='flex flex-col md:flex-row  xl:items-center gap-8 xl:p-7'>
+                        <img src={assets.location} alt="location" className='w-20 h-20 xl:w-35 xl:h-35' />
+                        <div className='flex flex-col justify-center gap-3'>
+
+                            <div>
+                                <h1 className='font-semibold text-[24px]'>UAE</h1>
+                                <p className='text-[12px] xl:text-[16px]'>Sharjah Media City,Sharjah, UAE</p>
+                            </div>
+                            <div>
+                                <h1 className='font-semibold text-[24px]'>INDIA</h1>
+                                <p className='text-[12px] xl:text-[16px] text-wrap'>4th Floor STPI BUILDING, Technopark Campus, Kariavattom, Trivandrum Kerala 695581</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 {/* ---------------------------- location: Sharjah ---------------------------- */}
                 <section className='w-full border border-gray-200 p-4 hover:shadow-lg transition-all ease-in duration-300'>

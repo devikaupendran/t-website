@@ -194,11 +194,11 @@
     }
 }
 
-/* Add this to your component's hover effect */
+/* Add this to your component's hover effect
 .border-animate-on-hover .group:hover {
     animation: borderAnimation 1s ease-out forwards;
     border-color: #f79051;
-}
+} */
 
 
 .custom-about {

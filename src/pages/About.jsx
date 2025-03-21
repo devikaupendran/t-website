@@ -49,7 +49,7 @@ const About = () => {
                     {
                         aboutUs.map((item, index) => {
                             return (
-                                <section key={index} className='flex flex-col xl:flex-row justify-center items-center gap-3 p-5 m-2 shadow-sm '
+                                <section key={index} className='flex flex-col xl:flex-row justify-center items-center gap-3 p-6 xl:p-5 m-2 shadow-sm '
                                     style={
                                         {
                                             boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
@@ -59,7 +59,7 @@ const About = () => {
                                         <img src={item.image} alt={`${item.name}`} className='w-full h-full  object-fill' />
                                     </div>
                                     <div className='xl:w-[70%]'>
-                                        <h1 className='text-center text-[30px]  xl:text-justify my-2'>{item.heading}</h1>
+                                        <h1 className='text-center text-[30px] text-orange-500 xl:text-justify my-2'>{item.heading}</h1>
                                         <p className='text-justify text-wrap text-[#5c5757]'>{item.description}</p>
                                     </div>
                                 </section>

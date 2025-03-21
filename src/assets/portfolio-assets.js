@@ -181,21 +181,21 @@ export const portfolioArray = [
         image: adhiSchool,
         icon: 'bx-window-alt',
         heading: "ADHI Schools",
-        category: "website"
+        category: "Website"
     },
 
     {
         image: newYouApp,
         icon: 'bx-mobile-alt',
         heading: "NewYou",
-        category: "mobile app"
+        category: "Mobile App"
     },
 
     {
         image: spotisan,
         icon: 'bx-window-alt',
         heading: "Spotisan",
-        category: "website"
+        category: "Website"
     },
 ]
 
