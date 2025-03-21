@@ -22,9 +22,9 @@ const Portfolio = () => {
                                             alt="product image"
                                             className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-300'
                                         />
-                                        {/* Overlay on hover */}
+                                        {/* ------------------- Overlay on hover ------------------- */}
                                         <div className='absolute inset-0 bg-black bg-opacity-100 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center text-white'>
-                                            <p className="mb-4 text-center text-[20px]">{product.description}</p>
+                                            <p className="mb-4 text-center text-[20px] p-3">{product.description}</p>
                                             <a href={product.link} target="_blank" rel="noopener noreferrer" className='p-4 bg-white opacity-100 rounded-full'>
                                                 <i className='bx bx-link  text-[#ff4a17] font-bold text-[35px]'></i>
                                             </a>
@@ -32,7 +32,7 @@ const Portfolio = () => {
                                         <p className='absolute hidden group-hover:block top-2 left-2 bg-[#ff4a17] bg-opacity-100 text-white rounded-2xl p-3 '>{product.category}</p>
                                     </div>
 
-                                    {/* Product name */}
+                                    {/* ------------------- Product name ------------------- */}
                                     <div className='m-5 p-3'>
                                         <h1 className=" text-center text-xl  text-[20px] font-semibold">{product.name}</h1>
                                     </div>

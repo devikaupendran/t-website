@@ -1,6 +1,6 @@
 import React from 'react'
-import { about } from '../assets/assets'
-import { assets } from '../assets/assets'
+import { about } from '../assets/about-assets'
+import { aboutAsset } from '../assets/about-assets'
 
 const AboutusSection = () => {
     return (
@@ -31,7 +31,10 @@ const AboutusSection = () => {
                         <p className='text-[#474646] md:text-[22px]'>
                             We, at Tricta Technologies Pvt. Ltd, are a collection of passionate creative individuals,
                             each with their expertise in providing services like
-                            <b> Web designing, Web development, Web applications, Mobile applications, E-Commerce Solutions, and Hosting Support.</b>
+                            <b>
+                                Web designing, Web development, Web applications, Mobile applications, E-Commerce Solutions,
+                                and Hosting Support.
+                            </b>
                         </p>
                     </div>
 
@@ -51,11 +54,14 @@ const AboutusSection = () => {
                     <div className='bg-[#ECECEC] border-[4px] border-white rounded-[20px] w-full  flex flex-col items-center justify-between'>
 
                         <div className='w-max-[600px] p-4 pt-10'>
-                            <p className='md:text-[24px]  xl:text-[26px] px-2'> We proudly serve clients from all major regions across the globe, delivering innovative and reliable solutions tailored to their needs.</p>
+                            <p className='md:text-[24px]  xl:text-[26px] px-2'>
+                                We proudly serve clients from all major regions across the globe,
+                                delivering innovative and reliable solutions tailored to their needs.
+                            </p>
                         </div>
 
                         <div>
-                            <img src={assets.aboutUsImg} className='sm:[w-350px] sm:[h-350px] xl:w-[487px] xl:h-[487px] '/>
+                            <img src={aboutAsset.aboutUsImg} className='sm:[w-350px] sm:[h-350px] xl:w-[487px] xl:h-[487px] ' />
                         </div>
                     </div>
 

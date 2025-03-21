@@ -1,11 +1,11 @@
 import React from 'react';
-import { assets } from '../assets/assets';
 
 const Map = () => {
     return (
         <div className='flex justify-center mb-20'>
             <div className="w-[80%]  grid  lg:grid-cols-2 gap-10 justify-center">
 
+                {/* ---------------------------- location: Sharjah ---------------------------- */}
                 <section className='w-full border border-gray-200 p-4 hover:shadow-lg transition-all ease-in duration-300'>
                     <div>
                         <h1 className='font-semibold text-[24px]'>UAE</h1>
@@ -22,6 +22,7 @@ const Map = () => {
                     </div>
                 </section>
 
+                {/* ---------------------------- location: India  ---------------------------- */}
                 <section className='w-full border border-gray-200 p-4 hover:shadow-lg transition-all ease-in duration-300'>
                     <div>
                         <h1 className='font-semibold text-[24px]'>INDIA</h1>

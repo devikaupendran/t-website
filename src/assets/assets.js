@@ -2,12 +2,6 @@ import logo from '../assets/images/logo.svg'
 import headerCircle from '../assets/images/header-circle.png'
 import close from '../assets/images/close.svg'
 
-// ------------------------- About us section icons -------------------------
-import aboutIcon1 from '../assets/images/about-icon1.png'
-import aboutIcon2 from '../assets/images/about-icon2.png'
-import aboutIcon3 from '../assets/images/about-icon3.png'
-import aboutUsImg from '../assets/images/about-us-img.png'
-
 //---------------------- Testimonials image ----------------
 import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
 
@@ -20,9 +14,6 @@ import footerBgImage from '../assets/images/footer-bg.jpg'
 import phone from '../assets/images/call.png'
 import location from '../assets/images/location.png'
 import message from '../assets/images/message.png'
-
-
-export const about = [aboutIcon1, aboutIcon2, aboutIcon3];
 
 
 export const testimonialArray = [
@@ -51,6 +42,6 @@ export const testimonialArray = [
 
 
 export const assets = {
-    logo, headerCircle,  aboutUsImg, testimonialUserIcon,
+    logo, headerCircle, testimonialUserIcon,
     footerBgImage, close, contactBanner, phone, message, location
 }

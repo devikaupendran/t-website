@@ -8,7 +8,7 @@ const Contactus = () => {
 
             {/* ------------------------ header ----------------------- */}
             <div className='relative'>
-                <img src={assets.contactBanner} alt="" className='w-full md:h-full h-[300px] object-cover' />
+                <img src={assets.contactBanner} alt="" className='w-full xl:h-[600px] md:h-full h-[300px] object-cover' />
 
                 <div className='absolute top-10 2xl:top-20 left-10 flex flex-col gap-4'>
                     <h1 className='text-[#ED7F13] text-[30px] lg:text-[60px] 2xl:text-[75px] pt-10'>CONTACT US</h1>
@@ -18,8 +18,8 @@ const Contactus = () => {
             </div>
 
 
-            {/* --------------- contact details section ---------------  */}
-            <div className="container max-w-[1000px] mx-auto px-4 mt-15 mb-20  xl:mt-30 xl:mb-30">
+            {/* --------------------------------------------- contact details section ---------------------------------------------  */}
+            <div className="container max-w-[1000px] mx-auto px-4 mt-15 mb-20 xl:mt-30 xl:mb-30">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
 
                     {/* -------------- row 1-------------  */}
@@ -82,10 +82,10 @@ const Contactus = () => {
 
 
 
-            {/* --------------- contact form section ---------------  */}
+            {/* --------------------------------------------- contact form section ---------------------------------------------  */}
             <div className='mb-50'>
-                <section className="">
-                    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg border md:px-10 border-gray-200 ">
+                <section>
+                    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg border md:px-10 border-gray-200 shadow-lg ">
                         <h2 className="mb-4 tracking-tight text-center text-gray-800 text-[40px] md:text-[60px]">Contact Us</h2>
                         <p className="mb-8 lg:mb-16 font-light text-center text-gray-600 sm:text-xl">Have a question? Whether you’re dealing with a technical issue, looking to provide feedback on one of our services, or want to learn more about our tailored IT solutions for your business, we’re here to help!    </p>
                         <form action="#" className="space-y-8">
