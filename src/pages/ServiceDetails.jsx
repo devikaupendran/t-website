@@ -28,18 +28,16 @@ const ServiceDetails = () => {
                 }></div>
 
                 {/* ----------------------------------- heading and description -----------------------------------  */}
+                <NavLink to={'/services'} className='absolute top-25 right-10 bg-white rounded-full w-10 h-10 p-3 flex justify-center items-center' >
+                    <i className='bx bx-left-arrow-alt' style={{ color: 'black', fontSize: '28px', }}></i>
+                </NavLink>
+
                 <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[80vh] custom-service lg:px-30'>
-                    <NavLink to={'/services'} className='absolute top-0 right-10 bg-white rounded-full w-10 h-10 p-3 flex justify-center items-center' >
-                        <i className='bx bx-left-arrow-alt' style={{ color: 'black', fontSize: '28px', }}></i>
-                    </NavLink>
-
-
                     <div className='flex flex-col gap-10'>
                         <h1 className='text-[40px] md:text-[60px] lg:text-[75px] font-semibold  '>{service.heading}</h1>
                         <p className='w-full text-[17px] lg:text-[22px]  text-justify text-[#cac0c0] '>{service.description}</p>
 
                         {/* ------------------- what we offer section --------------  */}
-
                         <div className='flex flex-col gap-10 lg:flex-row lg:gap-20 mt-20 h-[400px]'>
 
                             <div className='w-full lg:w-[70%] flex flex-col gap-10'>
@@ -51,8 +49,6 @@ const ServiceDetails = () => {
                                 <img src={service.image} alt="service" className='object-cover rounded-[20px]' />
                             </div>
                         </div>
-
-
 
                     </div>
                 </div>
