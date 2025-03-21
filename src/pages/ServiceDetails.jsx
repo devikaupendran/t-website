@@ -28,7 +28,7 @@ const ServiceDetails = () => {
                 }></div>
 
                 {/* ----------------------------------- heading and description -----------------------------------  */}
-                <NavLink to={'/services'} className='absolute top-25 right-10 bg-white rounded-full w-10 h-10 p-3 flex justify-center items-center' >
+                <NavLink to={'/services'} className='absolute z-10 top-27 right-10 bg-white rounded-full w-10 h-10 p-3 flex justify-center items-center' >
                     <i className='bx bx-left-arrow-alt' style={{ color: 'black', fontSize: '28px', }}></i>
                 </NavLink>
 
