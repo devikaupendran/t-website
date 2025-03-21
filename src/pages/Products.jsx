@@ -9,7 +9,7 @@ const Products = () => {
             <Banner />
 
             <div>
-                <h1 className='text-center text-[60px] md:text-[75px] pt-10'>Our Products</h1>
+                <h1 className='text-center text-[40px] md:text-[60px] lg:text-[75px] pt-10'>Our Products</h1>
 
                 <div className='w-full  px-[4%] md:px-[6%] xl:px-[4%] flex flex-col gap-20  xl:flex-row xl:gap-10  justify-between my-[150px]'>
                     <div className=' w-full xl:w-[50%] flex flex-col gap-7'>

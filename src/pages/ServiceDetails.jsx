@@ -13,7 +13,7 @@ const ServiceDetails = () => {
 
     return (
 
-        <div className='w-full absolute top-0 '>
+        <div className='w-full absolute top-0 bg-[#000000]'>
 
             {/* ----------------------------------- image section -----------------------------------  */}
             <div className='h-[100vh] w-[100%] relative bg-[#000000]'>
@@ -32,7 +32,7 @@ const ServiceDetails = () => {
                     <i className='bx bx-left-arrow-alt' style={{ color: 'black', fontSize: '28px', }}></i>
                 </NavLink>
 
-                <div className='bg-transparent absolute top-[20%] overflow-scroll text-white px-10 h-[80vh] custom-service lg:px-30'>
+                <div className='bg-transparent absolute top-[20%] overflow-auto text-white px-10  h-[80vh] custom-service lg:px-30'>
                     <div className='flex flex-col gap-10 mt-10'>
                         <h1 className='text-[40px] md:text-[60px] lg:text-[75px] font-semibold  '>{service.heading}</h1>
                         <p className='w-full text-[17px] lg:text-[22px]  text-justify text-[#cac0c0] '>{service.description}</p>

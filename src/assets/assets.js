@@ -11,8 +11,15 @@ import aboutUsImg from '../assets/images/about-us-img.png'
 //---------------------- Testimonials image ----------------
 import testimonialUserIcon from '../assets/images/testimonial-user-icon.png'
 
+//---------------------- Contact us header image ----------------
+import contactBanner from '../assets/images/contactBanner.jpg'
+
 //---------------------- footer background image ----------------
 import footerBgImage from '../assets/images/footer-bg.jpg'
+
+import phone from '../assets/images/call.png'
+import location from '../assets/images/location.png'
+import message from '../assets/images/message.png'
 
 
 export const about = [aboutIcon1, aboutIcon2, aboutIcon3];
@@ -45,5 +52,5 @@ export const testimonialArray = [
 
 export const assets = {
     logo, headerCircle,  aboutUsImg, testimonialUserIcon,
-    footerBgImage, close
+    footerBgImage, close, contactBanner, phone, message, location
 }
