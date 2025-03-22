@@ -15,37 +15,42 @@ const AboutusSection = () => {
             <div className='w-full  flex flex-col lg:flex-row gap-8 pt-[40px]'>
 
                 {/* --------------- left section --------------- */}
-                <motion.div className='w-[100%] xl:w-[50%]'
-                    initial={{ x: '-100%', opacity: 0 }}  // Start position and opacity
-                    whileInView={{ x: 0, opacity: 1 }}  // End position and opacity when in view
-                    transition={
-                        {
-                            x: {
-                                type: 'spring',   // Smooth animation for x property
-                                stiffness: 60,     // Adjust stiffness for smoothness
-                                damping: 25,       // Control bounce (lower is more bouncy)
-                                duration: 1.5,     // Duration of the horizontal movement
-                            },
-                            opacity: {
-                                duration: 1.5,     // Smooth fade-in with same duration
+                <div className='w-[100%] xl:w-[50%]'>
+
+                    <motion.div className='w-max'
+                        initial={{ x: '-100%', opacity: 0 }} // Start position: off-screen to the left and hidden
+                        whileInView={{ x: 0, opacity: 1 }} // Final position: original position and visible
+                        transition={
+                            {
+                                type: 'spring',
+                                stiffness: 50,
+                                damping: 25,
+                                duration: 1, // Duration for the animation
                             }
                         }
-                    }
-                    viewport={{ once: true }}
-
-                >
-
-                    <div className='w-max'>
+                        viewport={{ once: true }}>
                         <h1 className='text-[32px] md:text-[70px] lg:text-[64px] xl:text-[70px]'>Designing <br /> Futuristic Solutions</h1>
-                    </div>
+                    </motion.div>
 
-                    <div className='flex gap-4 mt-[18px]'>
+                    <motion.div className='flex gap-4 mt-[18px]'
+                        initial={{ y: '60%', opacity: 0 }} // Start position and opacity
+                        whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
+                        transition={
+                            {
+                                type: 'spring',
+                                stiffness: 60,
+                                damping: 25,
+                                duration: 2,
+                                delay: 1
+                            }
+                        }
+                        viewport={{ once: true }}>
                         {
                             about.map((i, index) => (
                                 <img key={index} src={i} className='w-[60px] h-[60px] sm:w-[88px] sm:h-[88px] hover:scale-130 transition-all ease-in duration-300 cursor-pointer' />
                             ))
                         }
-                    </div>
+                    </motion.div>
 
                     <div className='max-w-[400px] md:max-w-[600px] mt-[39px]'>
                         <p className='text-[#474646] md:text-[22px]'>
@@ -64,10 +69,10 @@ const AboutusSection = () => {
                         transition-all duration-600 ease-in-out rounded-[10px]'
                             onClick={() => scrollTo(0, 0)}
                         >
-                            Learn more
+                            Know more
                         </button>
                     </NavLink>
-                </motion.div>
+                </div>
 
                 {/* --------------- right section --------------- */}
                 <motion.div
@@ -79,7 +84,7 @@ const AboutusSection = () => {
                             duration: 1,
                             type: 'spring',
                             stiffness: 10,
-                            delay:1
+                            delay: 1
                         }
                     }
                     viewport={{ once: true }}

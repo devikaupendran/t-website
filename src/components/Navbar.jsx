@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
 import { NavLink, useLocation } from 'react-router-dom'
+import { servicesCardDetails } from '../assets/service-assets'
 
 const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
-    const [isHovering, setIsHovering] = useState(false);
+    const [isContactusBtnHovering, setIsContactusBtnHovering] = useState(false);
     const location = useLocation(); // Get the current path
+
 
     const [isWhiteColor, setIsWhiteColor] = useState(false);
     const [serviceColor, setServiceColor] = useState(false);
@@ -27,7 +29,7 @@ const Navbar = () => {
     const getButtonStyle = () => {
         if (location.pathname === '/') {
             // Home page styling  
-            return isHovering
+            return isContactusBtnHovering
                 ? {
                     borderColor: '#fff',
                     borderWidth: '1px',
@@ -46,7 +48,7 @@ const Navbar = () => {
                 };
         } else {
             // Other pages styling
-            return isHovering
+            return isContactusBtnHovering
                 ? {
                     borderColor: '#ff4a17',
                     borderWidth: '1px',
@@ -100,8 +102,8 @@ const Navbar = () => {
                         to={'/contact-us'}
                         className='rounded-xl'
                         style={getButtonStyle()}
-                        onMouseEnter={() => setIsHovering(true)}
-                        onMouseLeave={() => setIsHovering(false)}
+                        onMouseEnter={() => setIsContactusBtnHovering(true)}
+                        onMouseLeave={() => setIsContactusBtnHovering(false)}
                     > <li className='p-3'>CONTACT US</li>
                     </NavLink>
                 </ul>

@@ -35,20 +35,23 @@ const ServiceDetails = () => {
 
                 <div className='bg-transparent absolute top-[20%] overflow-auto text-white px-10 h-[80vh] custom-service lg:px-30'>
                     <div className='flex flex-col gap-10 mt-10'>
-                        <motion.h1 className='text-[40px] md:text-[60px] lg:text-[75px] font-semibold  '
+                        <motion.h1 className='text-[40px] md:text-[60px] lg:text-[75px] font-semibold'
                             initial={{ y: '60%', opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
-                            transition={{
-                                type: 'spring',
-                                stiffness: 60,
-                                damping: 25,
-                                duration: 2,
-                            }}
+                            transition={
+                                {
+                                    type: 'spring',
+                                    stiffness: 60,
+                                    damping: 25,
+                                    duration: 2,
+                                }
+                            }
                             viewport={{ once: true }}
                         >
                             {service.heading}
                         </motion.h1>
-                        <motion.p className='w-full text-[17px] lg:text-[22px]  text-justify text-[#cac0c0] '
+
+                        <motion.p className='w-full text-[17px] lg:text-[22px]  text-justify text-[#cac0c0]'
                             initial={{ y: '60%', opacity: 0 }} // Start position and opacity
                             whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
                             transition={{
@@ -56,7 +59,7 @@ const ServiceDetails = () => {
                                 stiffness: 60,
                                 damping: 25,
                                 duration: 2,
-                                delay: 0.5, 
+                                delay: 0.5,
                             }}
                             viewport={{ once: true }}
 
@@ -64,14 +67,15 @@ const ServiceDetails = () => {
                         </motion.p>
 
                         {/* ------------------- what we offer section --------------  */}
-                        <motion.div className='flex h-auto flex-col items-center gap-10 lg:flex-row lg:gap-20 mt-40 mb-10 '
-                            initial={{ y: '60%', opacity: 0 }} // Start position and opacity
+                        <motion.div className='flex h-auto flex-col items-center gap-10 lg:flex-row lg:gap-20 mt-30 mb-10 '
+                            initial={{ y: '30%', opacity: 0 }} // Start position and opacity
                             whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
                             transition={{
                                 type: 'spring',
                                 stiffness: 60,
                                 damping: 25,
                                 duration: 2,
+                                delay: 1,
                             }}
                             viewport={{ once: true }}>
 

@@ -73,7 +73,7 @@ const Contactus = () => {
                         stiffness: 60,
                         damping: 25,
                         duration: 2,
-                       
+
                     }
                 }
                 viewport={{ once: true }}
@@ -161,10 +161,6 @@ const Contactus = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
 
             <Map />
         </div>

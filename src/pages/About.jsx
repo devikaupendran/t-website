@@ -42,9 +42,10 @@ const About = () => {
                         damping: 25,
                         duration: 2,
                     }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true }}>
+                    About us
+                </motion.h1>
 
-                >About us</motion.h1>
                 <motion.p className='text-wrap text-[17px] lg:text-[22px] text-justify text-[#797575] px-7 xl:px-30 my-10'
                     initial={{ y: '60%', opacity: 0 }} // Start position and opacity
                     whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
@@ -94,7 +95,7 @@ const About = () => {
             {/* --------------------------- our team --------------------------- */}
             <div className='my-30'>
                 <h1 className='text-center text-[35px] md:text-[50px] lg:text-[65px] pb-10'>Meet our Management</h1>
-                <div className='flex flex-col lg:flex-row justify-center items-center gap-10 px-3'>
+                <div className='flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20 px-3'>
                     {
                         meetOurTeamArray.map((team, index) => {
                             const isActive = activeMemberIndex === index;
