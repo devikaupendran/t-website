@@ -76,7 +76,10 @@ const AboutusSection = () => {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={
                         {
-                            duration: 1, type: 'spring', stiffness: 10
+                            duration: 1,
+                            type: 'spring',
+                            stiffness: 10,
+                            delay:1
                         }
                     }
                     viewport={{ once: true }}
