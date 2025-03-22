@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const AboutusSection = () => {
     return (
-        <div className='w-full h-max bg-[#f2f2f2] px-10 lg:px-[80px] xl:px-[6%] py-30 custom-about-us-home'>
+        <div className='w-full h-max py-10 bg-[#f2f2f2] px-10 lg:px-[80px] xl:px-[6%] xl:py-30'>
 
             <div className='w-max pt-[63px]'>
                 <h2 className='text-[#ED7F13] bg-[#ebebeb] shadow-sm p-3 px-6 rounded-lg text-[20px] md:text-[36px]'> ABOUT TRICTA </h2>
