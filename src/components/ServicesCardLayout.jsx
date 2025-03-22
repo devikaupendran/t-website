@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { servicesCardDetails } from '../assets/service-assets';
 import { serviceAssets } from '../assets/service-assets';
+import { motion } from 'framer-motion';
 
 const ServicesCardLayout = ({ limit }) => {
 
@@ -23,11 +24,12 @@ const ServicesCardLayout = ({ limit }) => {
                 cardsToDisplay.map((card, index) => {
                     return (
 
-                        <div key={index}
+                        <motion.div
+                            key={index}
                             className={`w-[300px] h-[320px] md:w-[380px] md:h-[410px] lg:w-[360px] lg:h-[390px] ${isHomePage ? '' : '3xl:w-[520px] 3xl:h-[550px]'}  rounded-[20px] flex flex-col  
                                         items-center relative customCard cursor-pointer hover:scale-105 transition ease duration-300`}
-                            onClick={() => handleCardClick(index)} >
-
+                            onClick={() => handleCardClick(index)}
+                        >
                             {/* --------- image --------- */}
                             <div>
                                 <img src={card.imageGif} alt="card image" className={`w-[100px] h-[100px] md:w-[130px] md:h-[130px] ${isHomePage ? '' : '3xl:w-[200px] 3xl:h-[200px]'} mt-[30px] rounded-full`} />
@@ -41,9 +43,9 @@ const ServicesCardLayout = ({ limit }) => {
 
                             {/* --------------- Bottom image --------------- */}
                             <div className='absolute right-0 bottom-0 '>
-                                <img src={serviceAssets.cardBottomDesign} className={`rounded-br-[20px] overflow-hidden  ${isHomePage ? '': '3xl:w-[520px]'}`} alt="" />
+                                <img src={serviceAssets.cardBottomDesign} className={`rounded-br-[20px] overflow-hidden  ${isHomePage ? '' : '3xl:w-[520px]'}`} alt="" />
                             </div>
-                        </div>
+                        </motion.div>
                     )
                 })
             }
@@ -51,4 +53,4 @@ const ServicesCardLayout = ({ limit }) => {
     )
 }
 
-export default ServicesCardLayout
+export default ServicesCardLayout;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { portfolioData } from '../assets/portfolio-assets';
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
     // State to manage the selected category
@@ -24,12 +25,11 @@ const Portfolio = () => {
                 <h1 className='text-center text-[60px] md:text-[75px] pt-10'>Our Portfolio</h1>
             </div>
 
-            {/* Category Filter */}
+            {/*---------- Category Filter ----------*/}
             <div className="text-center mt-10">
                 <div className="flex flex-column xl:flex-row justify-center gap-5 mx-4">
                     {
                         categories.map((category) => (
-
                             <button
                                 key={category}
                                 onClick={() => handleCategoryChange(category)}
@@ -43,13 +43,31 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            {/* Portfolio Grid */}
-            <div className='w-full flex justify-center items-center mt-20 px-10'>
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-17'>
+            {/* -------------------- Portfolio Grid with Framer Motion -------------------- */}
+            <div
+                className='w-full flex justify-center items-center mt-20 px-10'
+
+            >
+                <motion.div
+                    className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-17'
+                    layout
+                    key={selectedCategory}  // Change key when the category changes to trigger a re-render
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: 0.5 }}
+                >
                     {
                         filteredPortfolioData.map((product, index) => {
                             return (
-                                <div key={index} className="relative group">
+                                <motion.div
+                                    key={index}
+                                    className="relative group"
+                                    initial={{ opacity: 0, y: 100 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -100 }}
+                                    transition={{ duration: 1.5, delay: index * 0.4 }}
+                                >
                                     {/* ------------------- Image container with fixed size ------------------- */}
                                     <div className="relative h-[300px] overflow-hidden cursor-pointer rounded-[20px]">
                                         <img
@@ -71,13 +89,13 @@ const Portfolio = () => {
                                     <div className='m-4 p-3'>
                                         <h1 className="text-center text-xl text-[20px] font-semibold">{product.name}</h1>
                                     </div>
-                                </div>
+                                </motion.div>
                             )
                         })
                     }
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </div >
     )
 }
 

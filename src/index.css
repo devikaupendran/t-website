@@ -204,3 +204,7 @@
 .custom-about {
     background: linear-gradient(180deg, #fff 0, #fffef8 100%)
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

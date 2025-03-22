@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { about, meetOurTeamArray } from '../assets/about-assets';
 import { aboutUs } from '../assets/about-assets';
+import { motion } from 'framer-motion';
 
 const About = () => {
 
@@ -32,15 +33,36 @@ const About = () => {
     return (
         <div>
             <div>
-                <h1 className='text-center text-[40px] md:text-[60px] lg:text-[75px] pt-10'>About us</h1>
-                <p className='text-wrap text-[17px] lg:text-[22px] text-justify text-[#797575] px-7 xl:px-30 my-10'>
+                <motion.h1 className='text-center text-[40px] md:text-[60px] lg:text-[75px] pt-10'
+                    initial={{ y: '60%', opacity: 0 }} // Start position and opacity
+                    whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
+                    transition={{
+                        type: 'spring',
+                        stiffness: 60,
+                        damping: 25,
+                        duration: 2,
+                    }}
+                    viewport={{ once: true }}
+
+                >About us</motion.h1>
+                <motion.p className='text-wrap text-[17px] lg:text-[22px] text-justify text-[#797575] px-7 xl:px-30 my-10'
+                    initial={{ y: '60%', opacity: 0 }} // Start position and opacity
+                    whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
+                    transition={{
+                        type: 'spring',
+                        stiffness: 60,
+                        damping: 25,
+                        duration: 2,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}>
                     We, at Tricta Technologies Pvt. Ltd, are a collection of a passionate set of creative individuals,
                     each with their own area of expertise in providing services like Web designing,
                     Web development, Web applications, Mobile applications, E-Commerce Solutions and Hosting Support,
                     serving clients from all major region across the globe. Based out of India, Tricta has centers in the US, Canada,
                     Australia and the Middle East, serving all types of IT requirements ranging from a basic website to complex
                     and robust mobile/web application/products.
-                </p>
+                </motion.p>
             </div>
 
             {/* --------------------------- Our mission, vision and history --------------------------- */}

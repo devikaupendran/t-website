@@ -1,19 +1,39 @@
 import React from 'react'
 import { about } from '../assets/about-assets'
 import { aboutAsset } from '../assets/about-assets'
+import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const AboutusSection = () => {
     return (
-        <div className='w-full h-max bg-[#f2f2f2] px-10 lg:px-[80px] xl:px-[6%] pb-30'>
+        <div className='w-full h-max bg-[#f2f2f2] px-10 lg:px-[80px] xl:px-[6%] py-30 custom-about-us-home'>
 
             <div className='w-max pt-[63px]'>
-                <h2 className='text-[#ED7F13] bg-[#ebebeb] shadow-sm p-3 px-6 rounded-lg text-[20px] md:text-[36px]'>ABOUT TRICTA</h2>
+                <h2 className='text-[#ED7F13] bg-[#ebebeb] shadow-sm p-3 px-6 rounded-lg text-[20px] md:text-[36px]'> ABOUT TRICTA </h2>
             </div>
 
             <div className='w-full  flex flex-col lg:flex-row gap-8 pt-[40px]'>
 
                 {/* --------------- left section --------------- */}
-                <div className='w-[100%] xl:w-[50%]'>
+                <motion.div className='w-[100%] xl:w-[50%]'
+                    initial={{ x: '-100%', opacity: 0 }}  // Start position and opacity
+                    whileInView={{ x: 0, opacity: 1 }}  // End position and opacity when in view
+                    transition={
+                        {
+                            x: {
+                                type: 'spring',   // Smooth animation for x property
+                                stiffness: 60,     // Adjust stiffness for smoothness
+                                damping: 25,       // Control bounce (lower is more bouncy)
+                                duration: 1.5,     // Duration of the horizontal movement
+                            },
+                            opacity: {
+                                duration: 1.5,     // Smooth fade-in with same duration
+                            }
+                        }
+                    }
+                    viewport={{ once: true }}
+
+                >
 
                     <div className='w-max'>
                         <h1 className='text-[32px] md:text-[70px] lg:text-[64px] xl:text-[70px]'>Designing <br /> Futuristic Solutions</h1>
@@ -38,18 +58,29 @@ const AboutusSection = () => {
                         </p>
                     </div>
 
-                    <div className='flex mt-6 justify-center md:justify-end md:mt-[40px] md:me-30'>
+                    <NavLink to={'/about-us'} className='flex mt-6 justify-center md:justify-end md:mt-[40px] md:me-30'>
                         <button className='p-1 px-4 md:p-2 md:px-4 md:text-[24px] cursor-pointer 
                          text-[#ED7F13] border border-[#ED7F13] hover:bg-[#ED7F13] hover:text-white 
                         transition-all duration-600 ease-in-out rounded-[10px]'
+                            onClick={() => scrollTo(0, 0)}
                         >
                             Learn more
                         </button>
-                    </div>
-                </div>
+                    </NavLink>
+                </motion.div>
 
                 {/* --------------- right section --------------- */}
-                <div className='w-[100%] xl:w-[50%] pb-3'>
+                <motion.div
+                    className='w-[100%] xl:w-[50%] pb-3'
+                    initial={{ x: '100%', opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={
+                        {
+                            duration: 1, type: 'spring', stiffness: 10
+                        }
+                    }
+                    viewport={{ once: true }}
+                >
 
                     <div className='bg-[#ECECEC] border-[4px] border-white rounded-[20px] w-full  flex flex-col items-center justify-between'>
 
@@ -65,9 +96,9 @@ const AboutusSection = () => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </div >
     )
 }
 

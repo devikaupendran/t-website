@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import Map from '../components/Map'
+import { delay, motion } from 'framer-motion'
 
 const Contactus = () => {
     return (
@@ -11,15 +12,72 @@ const Contactus = () => {
                 <img src={assets.contactBanner} alt="" className='w-full xl:h-[600px] md:h-full h-[300px] object-cover' />
 
                 <div className='absolute top-10 2xl:top-20 left-10 flex flex-col gap-4'>
-                    <h1 className='text-[#ED7F13] text-[30px] lg:text-[60px] 2xl:text-[75px] pt-10'>CONTACT US</h1>
-                    <p className='text-white text-[15px] xl:text-[22px] text-wrap'>Ready to take your business to the next level?</p>
-                    <p className='text-white text-[15px] max-w-[500px] xl:max-w-[800px] xl:text-[22px] text-wrap pe-3'>Contact us today to learn more about how Tricta Technologies Pvt. Ltd. can help you achieve your goals with our world-class software solutions.</p>
-                </div>
+                    <motion.h1 className='text-[#ED7F13] text-[30px] lg:text-[60px] 2xl:text-[75px] pt-10'
+                        initial={{ y: '60%', opacity: 0 }} // Start position and opacity
+                        whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
+                        transition={
+                            {
+                                type: 'spring',
+                                stiffness: 60,
+                                damping: 25,
+                                duration: 2,
+                            }
+                        }
+                        viewport={{ once: true }}>CONTACT US
+                    </motion.h1>
+
+
+                    <motion.p className='text-white text-[15px] xl:text-[22px] text-wrap'
+                        initial={{ y: '60%', opacity: 0 }} // Start position and opacity
+                        whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
+                        transition={
+                            {
+                                type: 'spring',
+                                stiffness: 60,
+                                damping: 25,
+                                duration: 2,
+                                delay: 1
+                            }
+                        }
+                        viewport={{ once: true }}>
+                        Ready to take your business to the next level?
+                    </motion.p>
+
+                    <motion.p
+                        className='text-white text-[15px] max-w-[500px] xl:max-w-[800px] xl:text-[22px] text-wrap pe-3'
+                        initial={{ x: '-100%', opacity: 0 }} // Start position: off-screen to the left and hidden
+                        whileInView={{ x: 0, opacity: 1 }} // Final position: original position and visible
+                        transition={
+                            {
+                                type: 'spring',
+                                stiffness: 50,
+                                damping: 25,
+                                duration: 1, // Duration for the animation
+                                delay: 1.3
+                            }
+                        }
+                        viewport={{ once: true }} // Trigger animation when the element is in view
+                    >
+                        Contact us today to learn more about how Tricta Technologies Pvt. Ltd. can help you achieve your goals with our world-class software solutions.
+                    </motion.p>                </div>
             </div>
 
 
             {/* --------------------------------------------- contact form section ---------------------------------------------  */}
-            <div className='my-40'>
+            <motion.div className='my-40'
+                initial={{ y: '60%', opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={
+                    {
+                        type: 'spring',
+                        stiffness: 60,
+                        damping: 25,
+                        duration: 2,
+                       
+                    }
+                }
+                viewport={{ once: true }}
+            >
                 <section>
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg border md:px-10 border-gray-200 shadow-lg ">
                         <h2 className="mb-4 tracking-tight text-center text-gray-800 text-[40px] md:text-[60px]">Contact Us</h2>
@@ -64,7 +122,7 @@ const Contactus = () => {
                     </div>
                 </section>
 
-            </div>
+            </motion.div>
 
 
             {/* --------------------------------------------- contact details section ---------------------------------------------  */}

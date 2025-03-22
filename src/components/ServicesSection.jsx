@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesCardLayout from './ServicesCardLayout'
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion';
 
 const ServicesSection = () => {
     const navigate = useNavigate();
@@ -18,10 +19,27 @@ const ServicesSection = () => {
                 <div className='pt-[38px] px-10 lg:px-[80px] xl:px-[6%]'>
                     <h1 className='text-[30px] md:text-[40px] xl:text-[56px] text-[#5B5B5B]'>What we can do for you</h1>
                 </div>
+              
+                <motion.div
+                    className='flex flex-col justify-center flex-wrap items-center lg:flex-row gap-10 xl:gap-20 mt-[64px] px-10 lg:px-[40px] xl:px-[6%]'
+                    initial={{ y: '50%', opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 60,
+                        damping: 25,
+                        duration: 1.5,
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
 
-                <div className='flex flex-col justify-center flex-wrap items-center lg:flex-row gap-10 xl:gap-20 mt-[64px] px-10 lg:px-[40px] xl:px-[6%]'>
+                >
                     <ServicesCardLayout limit={3} />
-                </div>
+                </motion.div> 
+
+                {/* <div className='flex flex-col justify-center flex-wrap items-center lg:flex-row gap-10 xl:gap-20 mt-[64px] px-10 lg:px-[40px] xl:px-[6%]'
+                >
+                    <ServicesCardLayout limit={3} />
+                </div> */}
 
                 {/* ----------- view more button ----------- */}
                 <div className='flex justify-center m-20'>

@@ -153,7 +153,7 @@ export const portfolioData = [
     {
         image: newYouApp,
         name: 'NewYou',
-        category: 'Web Application',
+        category: 'Mobile Application',
         description: 'Try-On & Customize Realistic 3D Hairstyles (Early Access)',
         link: 'https://play.google.com/store/apps/details?id=com.newyou.app'
     },

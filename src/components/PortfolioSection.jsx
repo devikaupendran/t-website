@@ -1,5 +1,6 @@
 import React from 'react'
 import { portfolioArray } from '../assets/portfolio-assets'
+import { motion } from 'framer-motion'
 
 const PortfolioSection = () => {
     return (
@@ -22,7 +23,19 @@ const PortfolioSection = () => {
                         portfolioArray.map((portfolio, index) => {
                             return (
 
-                                <div className='flex justify-center relative group cursor-pointer custom-portfolio-container'>
+                                <motion.div
+                                    key={index}
+                                    className='flex justify-center relative group cursor-pointer custom-portfolio-container'
+                                    initial={{ y: '50%', opacity: 0 }} // Start position and opacity
+                                    whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 60,
+                                        damping: 25,
+                                        duration: 1.5,
+                                        delay: index * 0.2, // Delay based on the index (this makes the items appear one by one)
+                                    }}
+                                    viewport={{ once: true, amount: 0.2 }}>
 
                                     {/* --------------- portfolio image --------------- */}
 
@@ -62,7 +75,7 @@ const PortfolioSection = () => {
 
                                     </div>
 
-                                </div>
+                                </motion.div>
                             )
                         })
                     }
