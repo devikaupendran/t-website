@@ -44,10 +44,7 @@ const Portfolio = () => {
             </div>
 
             {/* -------------------- Portfolio Grid with Framer Motion -------------------- */}
-            <div
-                className='w-full flex justify-center items-center mt-20 px-10'
-
-            >
+            <div className='w-full flex justify-center items-center mt-20 px-10'>
                 <motion.div
                     className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-17'
                     layout

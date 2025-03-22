@@ -1,8 +1,12 @@
 import React from 'react'
 import { portfolioArray } from '../assets/portfolio-assets'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 const PortfolioSection = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className='w-full h-max mb-60 '>
 
@@ -25,6 +29,7 @@ const PortfolioSection = () => {
 
                                 <motion.div
                                     key={index}
+                                    onClick={() => { navigate('/portfolio'); scrollTo(0, 0) }}
                                     className='flex justify-center relative group cursor-pointer custom-portfolio-container'
                                     initial={{ y: '50%', opacity: 0 }} // Start position and opacity
                                     whileInView={{ y: 0, opacity: 1 }} // Final position and full opacity when in view
@@ -36,7 +41,6 @@ const PortfolioSection = () => {
                                         delay: index * 0.2, // Delay based on the index (this makes the items appear one by one)
                                     }}
                                     viewport={{ once: true, amount: 0.2 }}>
-
                                     {/* --------------- portfolio image --------------- */}
 
                                     <div className='w-[320px] h-[300px] md:w-[450px] md:h-[320px] rounded-2xl overflow-hidden'>
@@ -74,6 +78,7 @@ const PortfolioSection = () => {
                                         </div>
 
                                     </div>
+
 
                                 </motion.div>
                             )

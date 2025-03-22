@@ -51,7 +51,7 @@ export const meetOurTeamArray = [
     {
         name: 'Arun G Toms',
         image: arunGToms,
-        position: 'CIO',
+        position: 'CTO',
         about: 'Arun manages the operation side of the team, and is influential in making key decisions with the efficient running of the company on a day to day basis. Arun is an AWS Certified Solutions Architect – Professional with a proven track record of 12 years in architecting, implementing, and managing robust cloud solutions. Adept at optimizing AWS services to meet complex business requirements, enhance performance, and ensure cost-effectiveness. Extensive experience in implementing security best practices and ensuring compliance with industry standards.'
     },
 
